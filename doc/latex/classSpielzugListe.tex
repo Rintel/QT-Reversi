@@ -1,0 +1,212 @@
+\hypertarget{classSpielzugListe}{\section{Spielzug\-Liste Class Reference}
+\label{classSpielzugListe}\index{Spielzug\-Liste@{Spielzug\-Liste}}
+}
+
+
+{\ttfamily \#include $<$spielzugliste.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSpielzugListe_a2c1a6281507b6915e42658dbcd6ee4b3}{Spielzug\-Liste} ()
+\item 
+\hyperlink{classSpielzugListe_a1572de2f17f8ee3a82586701254c8cdb}{Spielzug\-Liste} (int angabe\-Spieler, vector$<$ \hyperlink{classSpielzug}{Spielzug} $>$ angabe\-Erlaubter\-Spielzuege, vector$<$ \hyperlink{classSpielzug}{Spielzug} $>$ angabe\-Gelegter\-Spielzuege)
+\item 
+void \hyperlink{classSpielzugListe_ab6bfef73458e7f9cb8d97910ee772768}{fuege\-Gelegten\-Spielzug\-Hinzu} (\hyperlink{classSpielzug}{Spielzug} angabe\-Spielzug)
+\item 
+void \hyperlink{classSpielzugListe_a1f5aa551cab505be627ddbe2517fa7d5}{speichere\-Erlaubte\-Zuege} (vector$<$ \hyperlink{classSpielzug}{Spielzug} $>$ angabe\-Spielzuege)
+\item 
+void \hyperlink{classSpielzugListe_a8ce17aeece8a1f2c524345d619a355aa}{setze\-Aktuellen\-Spieler} (int angabe\-Spieler\-I\-D)
+\item 
+int \hyperlink{classSpielzugListe_aaef345f916807f02a2a3e02d19a0a0c8}{liefere\-Aktuellen\-Spieler} ()
+\item 
+vector$<$ \hyperlink{classSpielzug}{Spielzug} $>$ \hyperlink{classSpielzugListe_a8f78fdbaafe326674840813abb93e65e}{liefere\-Gelegte\-Spielsteine} ()
+\item 
+vector$<$ \hyperlink{classSpielzug}{Spielzug} $>$ \hyperlink{classSpielzugListe_ae8e860519b639d84ae3b108695afcb34}{liefere\-Erlaubte\-Spielzuege} ()
+\item 
+int \hyperlink{classSpielzugListe_add035f29dd46a529d7e8bb52815bd2ee}{liefere\-Anzahl\-Gelegter\-Spielsteine} ()
+\item 
+int \hyperlink{classSpielzugListe_a8a80a622dcde2bfd5d9008e7802820c3}{liefere\-Anzahl\-Erlaubter\-Spielzuege} ()
+\item 
+\hyperlink{classSpielzug}{Spielzug} \hyperlink{classSpielzugListe_aba3deda010487b0d9b00ac7bbbb2883f}{liefere\-Erlaubten\-Spielzug} (int angabe\-Spielzug\-I\-D)
+\item 
+\hyperlink{classSpielzug}{Spielzug} \hyperlink{classSpielzugListe_a8c7a7f424bb546c1b9dda98616054f78}{liefere\-Gelegten\-Spielzug} (int angabe\-Spielzug\-I\-D)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Diese Klasse repraesentiert eine Liste von Spielzuegen. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSpielzugListe_a2c1a6281507b6915e42658dbcd6ee4b3}{\index{Spielzug\-Liste@{Spielzug\-Liste}!Spielzug\-Liste@{Spielzug\-Liste}}
+\index{Spielzug\-Liste@{Spielzug\-Liste}!SpielzugListe@{Spielzug\-Liste}}
+\subsubsection[{Spielzug\-Liste}]{\setlength{\rightskip}{0pt plus 5cm}Spielzug\-Liste\-::\-Spielzug\-Liste (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpielzugListe_a2c1a6281507b6915e42658dbcd6ee4b3}
+Default-\/\-Konstruktor fuer eine \hyperlink{classSpielzugListe}{Spielzug\-Liste}. Setzt den aktuellen \hyperlink{classSpieler}{Spieler} auf -\/1 und legt leere Vectoren fuer die erlaubten und gelegten Spielzuege an. \hypertarget{classSpielzugListe_a1572de2f17f8ee3a82586701254c8cdb}{\index{Spielzug\-Liste@{Spielzug\-Liste}!Spielzug\-Liste@{Spielzug\-Liste}}
+\index{Spielzug\-Liste@{Spielzug\-Liste}!SpielzugListe@{Spielzug\-Liste}}
+\subsubsection[{Spielzug\-Liste}]{\setlength{\rightskip}{0pt plus 5cm}Spielzug\-Liste\-::\-Spielzug\-Liste (
+\begin{DoxyParamCaption}
+\item[{int}]{angabe\-Spieler, }
+\item[{vector$<$ {\bf Spielzug} $>$}]{angabe\-Erlaubter\-Spielzuege, }
+\item[{vector$<$ {\bf Spielzug} $>$}]{angabe\-Gelegter\-Spielzuege}
+\end{DoxyParamCaption}
+)}}\label{classSpielzugListe_a1572de2f17f8ee3a82586701254c8cdb}
+Konstriert ein Objekt vom Typ \hyperlink{classSpielzugListe}{Spielzug\-Liste} mit Hilfe der Angabe vom Aktuellen \hyperlink{classSpieler}{Spieler}, den erlaubten Zuegen und den bereits vollzogenen Spielzuegen.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angabe\-Spieler} & Angabe des Aktuellen Spielers. \\
+\hline
+{\em angabe\-Erlaubter\-Spielzuege} & Angabe der fuer den aktuellen \hyperlink{classSpieler}{Spieler} erlaubten Zuege. \\
+\hline
+{\em angabe\-Gelegter\-Spielzuege} & Angabe der bereits getaetigten Spielzuege. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSpielzugListe_ab6bfef73458e7f9cb8d97910ee772768}{\index{Spielzug\-Liste@{Spielzug\-Liste}!fuege\-Gelegten\-Spielzug\-Hinzu@{fuege\-Gelegten\-Spielzug\-Hinzu}}
+\index{fuege\-Gelegten\-Spielzug\-Hinzu@{fuege\-Gelegten\-Spielzug\-Hinzu}!SpielzugListe@{Spielzug\-Liste}}
+\subsubsection[{fuege\-Gelegten\-Spielzug\-Hinzu}]{\setlength{\rightskip}{0pt plus 5cm}void Spielzug\-Liste\-::fuege\-Gelegten\-Spielzug\-Hinzu (
+\begin{DoxyParamCaption}
+\item[{{\bf Spielzug}}]{angabe\-Spielzug}
+\end{DoxyParamCaption}
+)}}\label{classSpielzugListe_ab6bfef73458e7f9cb8d97910ee772768}
+Fuegt einen getaetigten \hyperlink{classSpielzug}{Spielzug} hinzu.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angabe\-Spielzug} & Angabe des getaetigten \hyperlink{classSpielzug}{Spielzug}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSpielzugListe_aaef345f916807f02a2a3e02d19a0a0c8}{\index{Spielzug\-Liste@{Spielzug\-Liste}!liefere\-Aktuellen\-Spieler@{liefere\-Aktuellen\-Spieler}}
+\index{liefere\-Aktuellen\-Spieler@{liefere\-Aktuellen\-Spieler}!SpielzugListe@{Spielzug\-Liste}}
+\subsubsection[{liefere\-Aktuellen\-Spieler}]{\setlength{\rightskip}{0pt plus 5cm}int Spielzug\-Liste\-::liefere\-Aktuellen\-Spieler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpielzugListe_aaef345f916807f02a2a3e02d19a0a0c8}
+Liefert den aktuellen \hyperlink{classSpieler}{Spieler} als Int-\/\-Wert.
+
+\begin{DoxyReturn}{Returns}
+Den aktuellen \hyperlink{classSpieler}{Spieler} als Int-\/\-Wert. 
+\end{DoxyReturn}
+\hypertarget{classSpielzugListe_a8a80a622dcde2bfd5d9008e7802820c3}{\index{Spielzug\-Liste@{Spielzug\-Liste}!liefere\-Anzahl\-Erlaubter\-Spielzuege@{liefere\-Anzahl\-Erlaubter\-Spielzuege}}
+\index{liefere\-Anzahl\-Erlaubter\-Spielzuege@{liefere\-Anzahl\-Erlaubter\-Spielzuege}!SpielzugListe@{Spielzug\-Liste}}
+\subsubsection[{liefere\-Anzahl\-Erlaubter\-Spielzuege}]{\setlength{\rightskip}{0pt plus 5cm}int Spielzug\-Liste\-::liefere\-Anzahl\-Erlaubter\-Spielzuege (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpielzugListe_a8a80a622dcde2bfd5d9008e7802820c3}
+Liefert die Anzahl der erlaubten Spielzuege.
+
+\begin{DoxyReturn}{Returns}
+Die Anzahl der erlaubten Spielzuege. 
+\end{DoxyReturn}
+\hypertarget{classSpielzugListe_add035f29dd46a529d7e8bb52815bd2ee}{\index{Spielzug\-Liste@{Spielzug\-Liste}!liefere\-Anzahl\-Gelegter\-Spielsteine@{liefere\-Anzahl\-Gelegter\-Spielsteine}}
+\index{liefere\-Anzahl\-Gelegter\-Spielsteine@{liefere\-Anzahl\-Gelegter\-Spielsteine}!SpielzugListe@{Spielzug\-Liste}}
+\subsubsection[{liefere\-Anzahl\-Gelegter\-Spielsteine}]{\setlength{\rightskip}{0pt plus 5cm}int Spielzug\-Liste\-::liefere\-Anzahl\-Gelegter\-Spielsteine (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpielzugListe_add035f29dd46a529d7e8bb52815bd2ee}
+Liefert die Anzahl der gelegten Spielzuege.
+
+\begin{DoxyReturn}{Returns}
+Die Anzahl der gelegten Spielzuege. 
+\end{DoxyReturn}
+\hypertarget{classSpielzugListe_aba3deda010487b0d9b00ac7bbbb2883f}{\index{Spielzug\-Liste@{Spielzug\-Liste}!liefere\-Erlaubten\-Spielzug@{liefere\-Erlaubten\-Spielzug}}
+\index{liefere\-Erlaubten\-Spielzug@{liefere\-Erlaubten\-Spielzug}!SpielzugListe@{Spielzug\-Liste}}
+\subsubsection[{liefere\-Erlaubten\-Spielzug}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Spielzug} Spielzug\-Liste\-::liefere\-Erlaubten\-Spielzug (
+\begin{DoxyParamCaption}
+\item[{int}]{angabe\-Spielzug\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{classSpielzugListe_aba3deda010487b0d9b00ac7bbbb2883f}
+Liefert einen bestimmten erlaubten \hyperlink{classSpielzug}{Spielzug} mit Hilfe der Angabe der Spielzug-\/\-I\-D.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angabe\-Spielzug\-I\-D} & Angabe der Spielzug-\/\-I\-D als Int-\/\-Wert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Den \hyperlink{classSpielzug}{Spielzug}, mit der Spielzug-\/\-I\-D. 
+\end{DoxyReturn}
+\hypertarget{classSpielzugListe_ae8e860519b639d84ae3b108695afcb34}{\index{Spielzug\-Liste@{Spielzug\-Liste}!liefere\-Erlaubte\-Spielzuege@{liefere\-Erlaubte\-Spielzuege}}
+\index{liefere\-Erlaubte\-Spielzuege@{liefere\-Erlaubte\-Spielzuege}!SpielzugListe@{Spielzug\-Liste}}
+\subsubsection[{liefere\-Erlaubte\-Spielzuege}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Spielzug} $>$ Spielzug\-Liste\-::liefere\-Erlaubte\-Spielzuege (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpielzugListe_ae8e860519b639d84ae3b108695afcb34}
+Liefert die erlaubten Spielzuege.
+
+\begin{DoxyReturn}{Returns}
+Die erlaubten Spielzuege als Vector. 
+\end{DoxyReturn}
+\hypertarget{classSpielzugListe_a8c7a7f424bb546c1b9dda98616054f78}{\index{Spielzug\-Liste@{Spielzug\-Liste}!liefere\-Gelegten\-Spielzug@{liefere\-Gelegten\-Spielzug}}
+\index{liefere\-Gelegten\-Spielzug@{liefere\-Gelegten\-Spielzug}!SpielzugListe@{Spielzug\-Liste}}
+\subsubsection[{liefere\-Gelegten\-Spielzug}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Spielzug} Spielzug\-Liste\-::liefere\-Gelegten\-Spielzug (
+\begin{DoxyParamCaption}
+\item[{int}]{angabe\-Spielzug\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{classSpielzugListe_a8c7a7f424bb546c1b9dda98616054f78}
+Liefert einen bestimmten bereits gelegten \hyperlink{classSpielzug}{Spielzug} mit Hilfe der Angabe der Spielzug-\/\-I\-D.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angabe\-Spielzug\-I\-D} & Angabe der Spielzug-\/\-I\-D als Int-\/\-Wert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Den \hyperlink{classSpielzug}{Spielzug}, mit der Spielzug-\/\-I\-D. 
+\end{DoxyReturn}
+\hypertarget{classSpielzugListe_a8f78fdbaafe326674840813abb93e65e}{\index{Spielzug\-Liste@{Spielzug\-Liste}!liefere\-Gelegte\-Spielsteine@{liefere\-Gelegte\-Spielsteine}}
+\index{liefere\-Gelegte\-Spielsteine@{liefere\-Gelegte\-Spielsteine}!SpielzugListe@{Spielzug\-Liste}}
+\subsubsection[{liefere\-Gelegte\-Spielsteine}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Spielzug} $>$ Spielzug\-Liste\-::liefere\-Gelegte\-Spielsteine (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpielzugListe_a8f78fdbaafe326674840813abb93e65e}
+Liefert die Liste der bereits gelegten Spielzuege.
+
+\begin{DoxyReturn}{Returns}
+Die Liste der gelegten Spielzuege als Vector. 
+\end{DoxyReturn}
+\hypertarget{classSpielzugListe_a8ce17aeece8a1f2c524345d619a355aa}{\index{Spielzug\-Liste@{Spielzug\-Liste}!setze\-Aktuellen\-Spieler@{setze\-Aktuellen\-Spieler}}
+\index{setze\-Aktuellen\-Spieler@{setze\-Aktuellen\-Spieler}!SpielzugListe@{Spielzug\-Liste}}
+\subsubsection[{setze\-Aktuellen\-Spieler}]{\setlength{\rightskip}{0pt plus 5cm}void Spielzug\-Liste\-::setze\-Aktuellen\-Spieler (
+\begin{DoxyParamCaption}
+\item[{int}]{angabe\-Spieler\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{classSpielzugListe_a8ce17aeece8a1f2c524345d619a355aa}
+Legt den aktuellen \hyperlink{classSpieler}{Spieler} fest.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angabe\-Spieler\-I\-D} & Angabe des aktuellen Spielers als Int-\/\-Wert. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSpielzugListe_a1f5aa551cab505be627ddbe2517fa7d5}{\index{Spielzug\-Liste@{Spielzug\-Liste}!speichere\-Erlaubte\-Zuege@{speichere\-Erlaubte\-Zuege}}
+\index{speichere\-Erlaubte\-Zuege@{speichere\-Erlaubte\-Zuege}!SpielzugListe@{Spielzug\-Liste}}
+\subsubsection[{speichere\-Erlaubte\-Zuege}]{\setlength{\rightskip}{0pt plus 5cm}void Spielzug\-Liste\-::speichere\-Erlaubte\-Zuege (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf Spielzug} $>$}]{angabe\-Spielzuege}
+\end{DoxyParamCaption}
+)}}\label{classSpielzugListe_a1f5aa551cab505be627ddbe2517fa7d5}
+Setzt die erlaubten Spielzuege.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angabe\-Spielzuege} & Angabe der erlaubten Spielzuege. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{spielzugliste_8h}{spielzugliste.\-h}\item 
+\hyperlink{spielzugliste_8cpp}{spielzugliste.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,6 @@
+<map id="OpenGLGame::OpenGLGame" name="OpenGLGame::OpenGLGame">
+<area shape="rect" id="node2" href="$classUi__OpenGLGame.html#a0a1f93aa9935d6ccf076548c88c7148c" title="Ui_OpenGLGame::setupUi" alt="" coords="251,5,429,32"/>
+<area shape="rect" id="node4" href="$classGLWidget.html#a197a6b5236bea4840848ad36b9ebec67" title="GLWidget::legeSpielerfest" alt="" coords="253,56,427,83"/>
+<area shape="rect" id="node3" href="$classUi__OpenGLGame.html#a0b0d78aa29b7225c7ec3b22ed62dad45" title="Ui_OpenGLGame::retranslateUi" alt="" coords="478,5,685,32"/>
+<area shape="rect" id="node5" href="$classReversi.html#ad6befc3b432e95f5afb11e1cd8890225" title="Reversi::aendereSpielerNamen" alt="" coords="480,56,683,83"/>
+</map>

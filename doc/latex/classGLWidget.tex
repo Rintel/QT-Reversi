@@ -1,0 +1,420 @@
+\hypertarget{classGLWidget}{\section{G\-L\-Widget Class Reference}
+\label{classGLWidget}\index{G\-L\-Widget@{G\-L\-Widget}}
+}
+
+
+{\ttfamily \#include $<$glwidget.\-h$>$}
+
+
+
+Inheritance diagram for G\-L\-Widget\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{classGLWidget__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for G\-L\-Widget\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{classGLWidget__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classGLWidget_a956079012f63513b1e9a5a764023553e}{update\-Game} ()
+\item 
+void \hyperlink{classGLWidget_a433268187ea9021a519991ff69a79a09}{setze\-Frage\-Spielzeug\-True} ()
+\item 
+void \hyperlink{classGLWidget_a236d12dd5c8593339b1bbe7c1350586b}{spiel\-Ende} (Q\-String gewinner\-Name)
+\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classGLWidget_ab39fa82a1c9ebaf72705013d16b82ead}{spielfeld\-Clicked} (int, int)
+\item 
+void \hyperlink{classGLWidget_a364029cdf5543ec0a89ebc75033c94cf}{animation\-Done} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGLWidget_ab79c391c86de1ffb76f6950b49d82c0c}{G\-L\-Widget} (Q\-Widget $\ast$parent=0)
+\item 
+void \hyperlink{classGLWidget_a7fab13e8cc9fc0730ca54c08b2c923a7}{initialize\-G\-L} ()
+\item 
+void \hyperlink{classGLWidget_a640b5570cb2b37724fd5b58a77339c5e}{paint\-G\-L} ()
+\item 
+void \hyperlink{classGLWidget_a81d96c3a1f7b81ba1f8cd84e590d9bdc}{resize\-G\-L} (int breite, int hoehe)
+\item 
+void \hyperlink{classGLWidget_abe84c820e63e0471060ae8a52d22d48d}{zeichne\-Spielstein} (G\-L\-Uquadric\-Obj $\ast$quadrat)
+\item 
+void \hyperlink{classGLWidget_a6ce32f69bd43407acad1fcf6e24bad09}{zeichne\-Spielstein\-Layout} ()
+\item 
+void \hyperlink{classGLWidget_ab144cc8064c1bbf6d0ef0646ca0bd06c}{mouse\-Press\-Event} (Q\-Mouse\-Event $\ast$event)
+\item 
+Q\-Size \hyperlink{classGLWidget_afa31f139572999beb2e0d3de0c163059}{mindest\-Groesse} ()
+\item 
+Q\-Size \hyperlink{classGLWidget_ac19f12d5851509a8102251825c61e1c6}{spielfeld\-Groesse} ()
+\item 
+void \hyperlink{classGLWidget_a202b2be8dd40de28fd78f0d66a1a9b7d}{setze\-Frage\-Spielzug} (bool angabe\-Moeglich)
+\item 
+bool \hyperlink{classGLWidget_ad9250100246069a68437b5642ae5599f}{liefere\-Frage\-Spielzug} ()
+\item 
+bool \hyperlink{classGLWidget_a888efdb7d698d6603887846729eeee35}{liefere\-Animation} ()
+\item 
+bool \hyperlink{classGLWidget_a68054b4f43a10acf5718827a891df7e4}{liefere\-Animation\-Settings} ()
+\item 
+void \hyperlink{classGLWidget_a5fd50bbf7a81c7fafc320caff423f39b}{setze\-Animation} (bool angabe\-Bool)
+\item 
+void \hyperlink{classGLWidget_a7a0390510b6476b067b73d973be17adf}{setze\-Animation\-Settings} (bool angabe\-Bool)
+\item 
+void \hyperlink{classGLWidget_a868f792867edd549be3528fd498a03cf}{verbinde\-Spiel} (\hyperlink{classReversi}{Reversi} $\ast$spiel)
+\item 
+void \hyperlink{classGLWidget_a197a6b5236bea4840848ad36b9ebec67}{lege\-Spielerfest} (Q\-String spieler1\-Name, Q\-String spieler2\-Name, bool spieler1\-Black)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Die Klasse G\-L-\/\-Widget hat die Funktion zum anzeigen des Open\-G\-L-\/\-Kontents des Reversi-\/\-Spiels. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classGLWidget_ab79c391c86de1ffb76f6950b49d82c0c}{\index{G\-L\-Widget@{G\-L\-Widget}!G\-L\-Widget@{G\-L\-Widget}}
+\index{G\-L\-Widget@{G\-L\-Widget}!GLWidget@{G\-L\-Widget}}
+\subsubsection[{G\-L\-Widget}]{\setlength{\rightskip}{0pt plus 5cm}G\-L\-Widget\-::\-G\-L\-Widget (
+\begin{DoxyParamCaption}
+\item[{Q\-Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{classGLWidget_ab79c391c86de1ffb76f6950b49d82c0c}
+Konstruiert ein G\-L-\/\-Widget, indem das komplette Reversispiel dargestellt wird.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Die Angabe des Eltern-\/\-Widgets. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGLWidget_ab79c391c86de1ffb76f6950b49d82c0c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classGLWidget_a364029cdf5543ec0a89ebc75033c94cf}{\index{G\-L\-Widget@{G\-L\-Widget}!animation\-Done@{animation\-Done}}
+\index{animation\-Done@{animation\-Done}!GLWidget@{G\-L\-Widget}}
+\subsubsection[{animation\-Done}]{\setlength{\rightskip}{0pt plus 5cm}void G\-L\-Widget\-::animation\-Done (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [signal]}}}\label{classGLWidget_a364029cdf5543ec0a89ebc75033c94cf}
+Signal, dass alle Animationen beendet sind. \hypertarget{classGLWidget_a7fab13e8cc9fc0730ca54c08b2c923a7}{\index{G\-L\-Widget@{G\-L\-Widget}!initialize\-G\-L@{initialize\-G\-L}}
+\index{initialize\-G\-L@{initialize\-G\-L}!GLWidget@{G\-L\-Widget}}
+\subsubsection[{initialize\-G\-L}]{\setlength{\rightskip}{0pt plus 5cm}void G\-L\-Widget\-::initialize\-G\-L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classGLWidget_a7fab13e8cc9fc0730ca54c08b2c923a7}
+Initialisiert das G\-L-\/\-Widget, mit einer schwarzen Hintergrundfarbe und laed die Textur des Spielbretts. \hypertarget{classGLWidget_a197a6b5236bea4840848ad36b9ebec67}{\index{G\-L\-Widget@{G\-L\-Widget}!lege\-Spielerfest@{lege\-Spielerfest}}
+\index{lege\-Spielerfest@{lege\-Spielerfest}!GLWidget@{G\-L\-Widget}}
+\subsubsection[{lege\-Spielerfest}]{\setlength{\rightskip}{0pt plus 5cm}void G\-L\-Widget\-::lege\-Spielerfest (
+\begin{DoxyParamCaption}
+\item[{Q\-String}]{spieler1\-Name, }
+\item[{Q\-String}]{spieler2\-Name, }
+\item[{bool}]{spieler1\-Black}
+\end{DoxyParamCaption}
+)}}\label{classGLWidget_a197a6b5236bea4840848ad36b9ebec67}
+Legt fest welcher \hyperlink{classSpieler}{Spieler} welchen Namen hat und welcher \hyperlink{classSpieler}{Spieler} welche farbe besitzt.
+
+
+\begin{DoxyParams}{Parameters}
+{\em spieler1\-Name} & Die Angabe des Namens von \hyperlink{classSpieler}{Spieler} 1. \\
+\hline
+{\em spieler2\-Name} & Die Angabe des Namens von \hyperlink{classSpieler}{Spieler} 2. \\
+\hline
+{\em spieler1\-Black} & Die Angabe welcher \hyperlink{classSpieler}{Spieler} der schwarze ist. (und damit beginnt) \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGLWidget_a197a6b5236bea4840848ad36b9ebec67_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classGLWidget_a888efdb7d698d6603887846729eeee35}{\index{G\-L\-Widget@{G\-L\-Widget}!liefere\-Animation@{liefere\-Animation}}
+\index{liefere\-Animation@{liefere\-Animation}!GLWidget@{G\-L\-Widget}}
+\subsubsection[{liefere\-Animation}]{\setlength{\rightskip}{0pt plus 5cm}bool G\-L\-Widget\-::liefere\-Animation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classGLWidget_a888efdb7d698d6603887846729eeee35}
+Liefert den boolschen Wert der Animation.
+
+\begin{DoxyReturn}{Returns}
+Den boolschen Wert der Animation. 
+\end{DoxyReturn}
+\hypertarget{classGLWidget_a68054b4f43a10acf5718827a891df7e4}{\index{G\-L\-Widget@{G\-L\-Widget}!liefere\-Animation\-Settings@{liefere\-Animation\-Settings}}
+\index{liefere\-Animation\-Settings@{liefere\-Animation\-Settings}!GLWidget@{G\-L\-Widget}}
+\subsubsection[{liefere\-Animation\-Settings}]{\setlength{\rightskip}{0pt plus 5cm}bool G\-L\-Widget\-::liefere\-Animation\-Settings (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classGLWidget_a68054b4f43a10acf5718827a891df7e4}
+Liefert den boolschen Wert der Animation\-Settings.
+
+\begin{DoxyReturn}{Returns}
+Den boolschen Wert der Animation\-Settings. 
+\end{DoxyReturn}
+\hypertarget{classGLWidget_ad9250100246069a68437b5642ae5599f}{\index{G\-L\-Widget@{G\-L\-Widget}!liefere\-Frage\-Spielzug@{liefere\-Frage\-Spielzug}}
+\index{liefere\-Frage\-Spielzug@{liefere\-Frage\-Spielzug}!GLWidget@{G\-L\-Widget}}
+\subsubsection[{liefere\-Frage\-Spielzug}]{\setlength{\rightskip}{0pt plus 5cm}bool G\-L\-Widget\-::liefere\-Frage\-Spielzug (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classGLWidget_ad9250100246069a68437b5642ae5599f}
+Liefert das frage\-Spielzug Attribut.
+
+\begin{DoxyReturn}{Returns}
+Das frage\-Spielzug Attribut. 
+\end{DoxyReturn}
+\hypertarget{classGLWidget_afa31f139572999beb2e0d3de0c163059}{\index{G\-L\-Widget@{G\-L\-Widget}!mindest\-Groesse@{mindest\-Groesse}}
+\index{mindest\-Groesse@{mindest\-Groesse}!GLWidget@{G\-L\-Widget}}
+\subsubsection[{mindest\-Groesse}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Size G\-L\-Widget\-::mindest\-Groesse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classGLWidget_afa31f139572999beb2e0d3de0c163059}
+Liefert die Mindestgroesse des G\-L-\/\-Widgets, welche 600 $\ast$ 600 betraegt.
+
+\begin{DoxyReturn}{Returns}
+Die Mindestgroesse des G\-L-\/\-Widgets. 
+\end{DoxyReturn}
+\hypertarget{classGLWidget_ab144cc8064c1bbf6d0ef0646ca0bd06c}{\index{G\-L\-Widget@{G\-L\-Widget}!mouse\-Press\-Event@{mouse\-Press\-Event}}
+\index{mouse\-Press\-Event@{mouse\-Press\-Event}!GLWidget@{G\-L\-Widget}}
+\subsubsection[{mouse\-Press\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void G\-L\-Widget\-::mouse\-Press\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)}}\label{classGLWidget_ab144cc8064c1bbf6d0ef0646ca0bd06c}
+Event zum erfassen der Koordinaten eines Clicks. Wenn sich der Mausclick auf dem Spielfeld ereignet, wird das spiel\-Feld\-Clicked Signal ausgefuehrt.
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & Ein Q\-Mouse\-Event. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classGLWidget_a640b5570cb2b37724fd5b58a77339c5e}{\index{G\-L\-Widget@{G\-L\-Widget}!paint\-G\-L@{paint\-G\-L}}
+\index{paint\-G\-L@{paint\-G\-L}!GLWidget@{G\-L\-Widget}}
+\subsubsection[{paint\-G\-L}]{\setlength{\rightskip}{0pt plus 5cm}void G\-L\-Widget\-::paint\-G\-L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classGLWidget_a640b5570cb2b37724fd5b58a77339c5e}
+Zeichnet das aktuelle Bild in das G\-L-\/\-Widget. 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGLWidget_a640b5570cb2b37724fd5b58a77339c5e_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classGLWidget_a81d96c3a1f7b81ba1f8cd84e590d9bdc}{\index{G\-L\-Widget@{G\-L\-Widget}!resize\-G\-L@{resize\-G\-L}}
+\index{resize\-G\-L@{resize\-G\-L}!GLWidget@{G\-L\-Widget}}
+\subsubsection[{resize\-G\-L}]{\setlength{\rightskip}{0pt plus 5cm}void G\-L\-Widget\-::resize\-G\-L (
+\begin{DoxyParamCaption}
+\item[{int}]{breite, }
+\item[{int}]{hoehe}
+\end{DoxyParamCaption}
+)}}\label{classGLWidget_a81d96c3a1f7b81ba1f8cd84e590d9bdc}
+Standart-\/\-Methode eines G\-L\-Widgets zum Anpassen der groesse dessen in einem Fenster.
+
+
+\begin{DoxyParams}{Parameters}
+{\em breite} & Die Angabe der Breite des Fensters. \\
+\hline
+{\em hoehe} & Die Angabe der Hoehe des Fensters. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classGLWidget_a5fd50bbf7a81c7fafc320caff423f39b}{\index{G\-L\-Widget@{G\-L\-Widget}!setze\-Animation@{setze\-Animation}}
+\index{setze\-Animation@{setze\-Animation}!GLWidget@{G\-L\-Widget}}
+\subsubsection[{setze\-Animation}]{\setlength{\rightskip}{0pt plus 5cm}void G\-L\-Widget\-::setze\-Animation (
+\begin{DoxyParamCaption}
+\item[{bool}]{angabe\-Bool}
+\end{DoxyParamCaption}
+)}}\label{classGLWidget_a5fd50bbf7a81c7fafc320caff423f39b}
+Setzt das animations Attribut.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angabe\-Bool} & Angabe als boolscher Wert. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classGLWidget_a7a0390510b6476b067b73d973be17adf}{\index{G\-L\-Widget@{G\-L\-Widget}!setze\-Animation\-Settings@{setze\-Animation\-Settings}}
+\index{setze\-Animation\-Settings@{setze\-Animation\-Settings}!GLWidget@{G\-L\-Widget}}
+\subsubsection[{setze\-Animation\-Settings}]{\setlength{\rightskip}{0pt plus 5cm}void G\-L\-Widget\-::setze\-Animation\-Settings (
+\begin{DoxyParamCaption}
+\item[{bool}]{angabe\-Bool}
+\end{DoxyParamCaption}
+)}}\label{classGLWidget_a7a0390510b6476b067b73d973be17adf}
+Setzt das animation\-Settings Attribut.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angabe\-Bool} & Angabe als boolscher Wert. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classGLWidget_a433268187ea9021a519991ff69a79a09}{\index{G\-L\-Widget@{G\-L\-Widget}!setze\-Frage\-Spielzeug\-True@{setze\-Frage\-Spielzeug\-True}}
+\index{setze\-Frage\-Spielzeug\-True@{setze\-Frage\-Spielzeug\-True}!GLWidget@{G\-L\-Widget}}
+\subsubsection[{setze\-Frage\-Spielzeug\-True}]{\setlength{\rightskip}{0pt plus 5cm}void G\-L\-Widget\-::setze\-Frage\-Spielzeug\-True (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{classGLWidget_a433268187ea9021a519991ff69a79a09}
+Setzt das frage\-Spielzug Attribut auf True. \hypertarget{classGLWidget_a202b2be8dd40de28fd78f0d66a1a9b7d}{\index{G\-L\-Widget@{G\-L\-Widget}!setze\-Frage\-Spielzug@{setze\-Frage\-Spielzug}}
+\index{setze\-Frage\-Spielzug@{setze\-Frage\-Spielzug}!GLWidget@{G\-L\-Widget}}
+\subsubsection[{setze\-Frage\-Spielzug}]{\setlength{\rightskip}{0pt plus 5cm}void G\-L\-Widget\-::setze\-Frage\-Spielzug (
+\begin{DoxyParamCaption}
+\item[{bool}]{angabe\-Moeglich}
+\end{DoxyParamCaption}
+)}}\label{classGLWidget_a202b2be8dd40de28fd78f0d66a1a9b7d}
+Setzt das frage\-Spielzug Attribut.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angabe\-Moeglich} & Angabe als boolscher Wert. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classGLWidget_a236d12dd5c8593339b1bbe7c1350586b}{\index{G\-L\-Widget@{G\-L\-Widget}!spiel\-Ende@{spiel\-Ende}}
+\index{spiel\-Ende@{spiel\-Ende}!GLWidget@{G\-L\-Widget}}
+\subsubsection[{spiel\-Ende}]{\setlength{\rightskip}{0pt plus 5cm}void G\-L\-Widget\-::spiel\-Ende (
+\begin{DoxyParamCaption}
+\item[{Q\-String}]{gewinner\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{classGLWidget_a236d12dd5c8593339b1bbe7c1350586b}
+Zeigt das Gewinner-\/\-Widget an.
+
+
+\begin{DoxyParams}{Parameters}
+{\em gewinner\-Name} & Der Name des Gewinners. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classGLWidget_ab39fa82a1c9ebaf72705013d16b82ead}{\index{G\-L\-Widget@{G\-L\-Widget}!spielfeld\-Clicked@{spielfeld\-Clicked}}
+\index{spielfeld\-Clicked@{spielfeld\-Clicked}!GLWidget@{G\-L\-Widget}}
+\subsubsection[{spielfeld\-Clicked}]{\setlength{\rightskip}{0pt plus 5cm}void G\-L\-Widget\-::spielfeld\-Clicked (
+\begin{DoxyParamCaption}
+\item[{int}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [signal]}}}\label{classGLWidget_ab39fa82a1c9ebaf72705013d16b82ead}
+Signal, dass das Spielfeld geclickt wurde. \hypertarget{classGLWidget_ac19f12d5851509a8102251825c61e1c6}{\index{G\-L\-Widget@{G\-L\-Widget}!spielfeld\-Groesse@{spielfeld\-Groesse}}
+\index{spielfeld\-Groesse@{spielfeld\-Groesse}!GLWidget@{G\-L\-Widget}}
+\subsubsection[{spielfeld\-Groesse}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Size G\-L\-Widget\-::spielfeld\-Groesse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classGLWidget_ac19f12d5851509a8102251825c61e1c6}
+Liefert die Mindestgroesse des Spielfeldes, welches 500 $\ast$ 500 betraegt.
+
+\begin{DoxyReturn}{Returns}
+Die Mindestgroesse des Spielfeldes. 
+\end{DoxyReturn}
+\hypertarget{classGLWidget_a956079012f63513b1e9a5a764023553e}{\index{G\-L\-Widget@{G\-L\-Widget}!update\-Game@{update\-Game}}
+\index{update\-Game@{update\-Game}!GLWidget@{G\-L\-Widget}}
+\subsubsection[{update\-Game}]{\setlength{\rightskip}{0pt plus 5cm}void G\-L\-Widget\-::update\-Game (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{classGLWidget_a956079012f63513b1e9a5a764023553e}
+Fuehrt alle Aenderungen an den Spielsteinen aus, und dreht diese um 180 Grad, wenn sich deren Farbe aendert. 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGLWidget_a956079012f63513b1e9a5a764023553e_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classGLWidget_a868f792867edd549be3528fd498a03cf}{\index{G\-L\-Widget@{G\-L\-Widget}!verbinde\-Spiel@{verbinde\-Spiel}}
+\index{verbinde\-Spiel@{verbinde\-Spiel}!GLWidget@{G\-L\-Widget}}
+\subsubsection[{verbinde\-Spiel}]{\setlength{\rightskip}{0pt plus 5cm}void G\-L\-Widget\-::verbinde\-Spiel (
+\begin{DoxyParamCaption}
+\item[{{\bf Reversi} $\ast$}]{spiel}
+\end{DoxyParamCaption}
+)}}\label{classGLWidget_a868f792867edd549be3528fd498a03cf}
+Verbindet das G\-L-\/\-Widget mit einem Reversi-\/\-Objekt. Ueber Signals und Slots werden ereignisse ausgetauscht, wie z.\-B. das setzen eines Spielsteins oder wechsel des aktuellen Spielers etc..
+
+(Verbindet G\-L-\/\-Widget mit der Reversi-\/\-Logik)
+
+
+\begin{DoxyParams}{Parameters}
+{\em spiel} & Die Angabe des Reversi-\/\-Spiel Objekts. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGLWidget_a868f792867edd549be3528fd498a03cf_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classGLWidget_abe84c820e63e0471060ae8a52d22d48d}{\index{G\-L\-Widget@{G\-L\-Widget}!zeichne\-Spielstein@{zeichne\-Spielstein}}
+\index{zeichne\-Spielstein@{zeichne\-Spielstein}!GLWidget@{G\-L\-Widget}}
+\subsubsection[{zeichne\-Spielstein}]{\setlength{\rightskip}{0pt plus 5cm}void G\-L\-Widget\-::zeichne\-Spielstein (
+\begin{DoxyParamCaption}
+\item[{G\-L\-Uquadric\-Obj $\ast$}]{quadrat}
+\end{DoxyParamCaption}
+)}}\label{classGLWidget_abe84c820e63e0471060ae8a52d22d48d}
+Veraendert ein Quadrat zu einem ovalfoermigen Spielstein mit einer schwarzen und weissen seite und Zeichnet diesen in das G\-L-\/\-Widget.
+
+
+\begin{DoxyParams}{Parameters}
+{\em quadrat} & Angbae eines G\-L\-Quadrats, welches zu einem Spielstein transformiert werden soll. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classGLWidget_a6ce32f69bd43407acad1fcf6e24bad09}{\index{G\-L\-Widget@{G\-L\-Widget}!zeichne\-Spielstein\-Layout@{zeichne\-Spielstein\-Layout}}
+\index{zeichne\-Spielstein\-Layout@{zeichne\-Spielstein\-Layout}!GLWidget@{G\-L\-Widget}}
+\subsubsection[{zeichne\-Spielstein\-Layout}]{\setlength{\rightskip}{0pt plus 5cm}void G\-L\-Widget\-::zeichne\-Spielstein\-Layout (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classGLWidget_a6ce32f69bd43407acad1fcf6e24bad09}
+Zeichent die Spielsteine auf das \hyperlink{classSpielbrett}{Spielbrett} und fuehrt die Drehungen dieser durch, wenn sich deren Farbe aendert. 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGLWidget_a6ce32f69bd43407acad1fcf6e24bad09_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{glwidget_8h}{glwidget.\-h}\item 
+\hyperlink{glwidget_8cpp}{glwidget.\-cpp}\end{DoxyCompactItemize}

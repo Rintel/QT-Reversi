@@ -1,0 +1,7 @@
+<map id="GLWidget::updateGame" name="GLWidget::updateGame">
+<area shape="rect" id="node2" href="$classSpielbrett.html#aad45932000bdb82cc1c58c4dbce08045" title="Spielbrett::entferneAlle\lDrehungen" alt="" coords="229,5,384,46"/>
+<area shape="rect" id="node4" href="$classSpielbrett.html#a973e4e3f43906428d50479001c08aae5" title="Spielbrett::liefereAnimation" alt="" coords="217,71,396,97"/>
+<area shape="rect" id="node5" href="$classGLWidget.html#a888efdb7d698d6603887846729eeee35" title="GLWidget::liefereAnimation" alt="" coords="216,121,397,148"/>
+<area shape="rect" id="node6" href="$classGLWidget.html#a5fd50bbf7a81c7fafc320caff423f39b" title="GLWidget::setzeAnimation" alt="" coords="217,172,396,199"/>
+<area shape="rect" id="node3" href="$classFeld.html#a5668abf4e68ad86c820238a06a3ae2fd" title="Feld::aendereDrehung" alt="" coords="446,12,597,39"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="Spielbrett::dreheSpielstein" name="Spielbrett::dreheSpielstein">
+<area shape="rect" id="node2" href="$classSpielbrett.html#aa16a4e86f849602fd6868cc6772c46c2" title="Spielbrett::liefereFeldeigenschaft" alt="" coords="230,5,442,32"/>
+<area shape="rect" id="node4" href="$classSpielbrett.html#a361157137c7c7cda4e06f568131c8fc9" title="Spielbrett::liefereFarbe" alt="" coords="259,56,413,83"/>
+<area shape="rect" id="node6" href="$classFeld.html#a214e1a88b71ffee9fb88c1643ec97525" title="Feld::aendereFarbe" alt="" coords="269,107,403,133"/>
+<area shape="rect" id="node7" href="$classFeld.html#a5668abf4e68ad86c820238a06a3ae2fd" title="Feld::aendereDrehung" alt="" coords="261,157,411,184"/>
+<area shape="rect" id="node3" href="$classFeld.html#a99a02b1d81eccc5ced54da45d37eedd1" title="Feld::liefereFeldeigenschaft" alt="" coords="491,5,674,32"/>
+<area shape="rect" id="node5" href="$classFeld.html#a71857da4dc18318fc85c3332179db0a0" title="Feld::liefereFarbe" alt="" coords="521,56,644,83"/>
+</map>

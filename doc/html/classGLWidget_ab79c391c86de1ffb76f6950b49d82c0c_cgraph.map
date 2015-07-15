@@ -1,0 +1,12 @@
+<map id="GLWidget::GLWidget" name="GLWidget::GLWidget">
+<area shape="rect" id="node2" href="$classGLWidget.html#a956079012f63513b1e9a5a764023553e" title="GLWidget::updateGame" alt="" coords="453,97,616,124"/>
+<area shape="rect" id="node8" href="$classGLWidget.html#a868f792867edd549be3528fd498a03cf" title="GLWidget::verbindeSpiel" alt="" coords="201,148,367,175"/>
+<area shape="rect" id="node3" href="$classSpielbrett.html#aad45932000bdb82cc1c58c4dbce08045" title="Spielbrett::entferneAlle\lDrehungen" alt="" coords="715,6,869,47"/>
+<area shape="rect" id="node5" href="$classSpielbrett.html#a973e4e3f43906428d50479001c08aae5" title="Spielbrett::liefereAnimation" alt="" coords="703,72,881,99"/>
+<area shape="rect" id="node6" href="$classGLWidget.html#a888efdb7d698d6603887846729eeee35" title="GLWidget::liefereAnimation" alt="" coords="701,123,883,149"/>
+<area shape="rect" id="node7" href="$classGLWidget.html#a5fd50bbf7a81c7fafc320caff423f39b" title="GLWidget::setzeAnimation" alt="" coords="703,173,881,200"/>
+<area shape="rect" id="node4" href="$classFeld.html#a5668abf4e68ad86c820238a06a3ae2fd" title="Feld::aendereDrehung" alt="" coords="931,13,1082,40"/>
+<area shape="rect" id="node9" href="$classGLWidget.html#a433268187ea9021a519991ff69a79a09" title="GLWidget::setzeFrageSpielzeugTrue" alt="" coords="417,148,653,175"/>
+<area shape="rect" id="node10" href="$classGLWidget.html#a236d12dd5c8593339b1bbe7c1350586b" title="GLWidget::spielEnde" alt="" coords="462,199,607,225"/>
+<area shape="rect" id="node11" href="$classReversi.html#af2c9e7f784cdd40097fdb81debc69c0a" title="Reversi::liefereSpielbrett" alt="" coords="452,249,617,276"/>
+</map>

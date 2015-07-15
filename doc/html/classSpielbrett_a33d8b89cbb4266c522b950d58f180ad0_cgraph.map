@@ -1,0 +1,5 @@
+<map id="Spielbrett::entferneAlleErlaubtenZuege" name="Spielbrett::entferneAlleErlaubtenZuege">
+<area shape="rect" id="node2" href="$classSpielbrett.html#aa16a4e86f849602fd6868cc6772c46c2" title="Spielbrett::liefereFeldeigenschaft" alt="" coords="209,5,421,32"/>
+<area shape="rect" id="node4" href="$classFeld.html#ae11f5df6990d6153f5c09f6e3f1d60d3" title="Feld::aendereEigenschaft" alt="" coords="229,56,400,83"/>
+<area shape="rect" id="node3" href="$classFeld.html#a99a02b1d81eccc5ced54da45d37eedd1" title="Feld::liefereFeldeigenschaft" alt="" coords="470,5,653,32"/>
+</map>

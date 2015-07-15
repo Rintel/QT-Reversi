@@ -1,0 +1,249 @@
+\hypertarget{classReversi}{\section{Reversi Class Reference}
+\label{classReversi}\index{Reversi@{Reversi}}
+}
+
+
+{\ttfamily \#include $<$reversi.\-h$>$}
+
+
+
+Inheritance diagram for Reversi\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=132pt]{classReversi__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Reversi\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=132pt]{classReversi__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classReversi_a87d94f3c3325867453b5008b45829bd8}{setze\-Spielstein} (int angabe\-X, int angabe\-Y)
+\item 
+void \hyperlink{classReversi_a3e8988d0d227389d09673d4b5968a922}{next\-Turn} ()
+\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classReversi_a23b22c8f180004e0df26478219bd9b93}{spiel\-Veraenderung} ()
+\item 
+void \hyperlink{classReversi_a619606ac8e7e930a5701d6f44730771c}{spiel\-Ende} (Q\-String gewinner\-Name)
+\item 
+void \hyperlink{classReversi_ad4baa37d88dbe7b4ddd8791943137537}{local\-Move} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classReversi_a3a9ba93d8fa9ca6eb84c6a80e3068fac}{Reversi} (Q\-String spieler\-Name1=\char`\"{}Spieler 1\char`\"{}, Q\-String spieler\-Name2=\char`\"{}Spieler 2\char`\"{})
+\item 
+\hyperlink{classReversi_afd006e4fdacdedc4a3bb34fe6f1d1940}{$\sim$\-Reversi} ()
+\item 
+void \hyperlink{classReversi_a9606774d86257a0eee737fdd19d396dc}{start} ()
+\item 
+\hyperlink{classSpielbrett}{Spielbrett} $\ast$ \hyperlink{classReversi_af2c9e7f784cdd40097fdb81debc69c0a}{liefere\-Spielbrett} ()
+\item 
+\hyperlink{classSpieler}{Spieler} $\ast$ \hyperlink{classReversi_ac34759e93dc42daeadc694c7f438161f}{liefere\-Spieler} (int angabe\-I\-D)
+\item 
+\hyperlink{classSpieler}{Spieler} $\ast$$\ast$ \hyperlink{classReversi_a3473c04b4663baa9b9731e9b9cd8c09f}{liefere\-Alle\-Spieler} ()
+\item 
+vector$<$ \hyperlink{classSpielzug}{Spielzug} $>$ \hyperlink{classReversi_a552ef8aea3cadce41ed8de8c610eb795}{liefere\-Spielzuege} ()
+\item 
+vector$<$ \hyperlink{classSpielzug}{Spielzug} $>$ \hyperlink{classReversi_a0e0285172b42340b0dc90837840f19c2}{liefere\-Erlaubte\-Spielzuege} ()
+\item 
+int \hyperlink{classReversi_a7ab1778f35a7335ab8522d81610e8d1f}{liefere\-Aktuellen\-Spieler} ()
+\item 
+void \hyperlink{classReversi_ad6befc3b432e95f5afb11e1cd8890225}{aendere\-Spieler\-Namen} (Q\-String spieler1\-Name, Q\-String spieler2\-Name)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Diese Klasse repraesentiert das Reversi-\/\-Spiel. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classReversi_a3a9ba93d8fa9ca6eb84c6a80e3068fac}{\index{Reversi@{Reversi}!Reversi@{Reversi}}
+\index{Reversi@{Reversi}!Reversi@{Reversi}}
+\subsubsection[{Reversi}]{\setlength{\rightskip}{0pt plus 5cm}Reversi\-::\-Reversi (
+\begin{DoxyParamCaption}
+\item[{Q\-String}]{spieler\-Name1 = {\ttfamily \char`\"{}Spieler~1\char`\"{}}, }
+\item[{Q\-String}]{spieler\-Name2 = {\ttfamily \char`\"{}Spieler~2\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{classReversi_a3a9ba93d8fa9ca6eb84c6a80e3068fac}
+Konstruiert ein Objekt vom Typ \hyperlink{classReversi}{Reversi} mit Hilfe der Angabe der beiden Spielernamen. Dabei werden alle Reversi-\/\-Start Optionen festgelegt. z.\-B. Erlaubte Spielzuege der beiden \hyperlink{classSpieler}{Spieler}, sowie die Namen und Anzahl der Spielzuege etc...
+
+
+\begin{DoxyParams}{Parameters}
+{\em spieler\-Name1} & \\
+\hline
+{\em spieler\-Name2} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classReversi_afd006e4fdacdedc4a3bb34fe6f1d1940}{\index{Reversi@{Reversi}!$\sim$\-Reversi@{$\sim$\-Reversi}}
+\index{$\sim$\-Reversi@{$\sim$\-Reversi}!Reversi@{Reversi}}
+\subsubsection[{$\sim$\-Reversi}]{\setlength{\rightskip}{0pt plus 5cm}Reversi\-::$\sim$\-Reversi (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classReversi_afd006e4fdacdedc4a3bb34fe6f1d1940}
+Destruktor fuer die Reversi-\/\-Klasse. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classReversi_ad6befc3b432e95f5afb11e1cd8890225}{\index{Reversi@{Reversi}!aendere\-Spieler\-Namen@{aendere\-Spieler\-Namen}}
+\index{aendere\-Spieler\-Namen@{aendere\-Spieler\-Namen}!Reversi@{Reversi}}
+\subsubsection[{aendere\-Spieler\-Namen}]{\setlength{\rightskip}{0pt plus 5cm}void Reversi\-::aendere\-Spieler\-Namen (
+\begin{DoxyParamCaption}
+\item[{Q\-String}]{spieler1\-Name, }
+\item[{Q\-String}]{spieler2\-Name}
+\end{DoxyParamCaption}
+)}}\label{classReversi_ad6befc3b432e95f5afb11e1cd8890225}
+Aendert die Namen beider \hyperlink{classSpieler}{Spieler}, mit der Hilfe der Angabe der neuen Spielernamen.
+
+
+\begin{DoxyParams}{Parameters}
+{\em spieler1\-Name} & Die Angabe des Spielernamens. \\
+\hline
+{\em spieler2\-Name} & Die Angabe des Spielernamens. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classReversi_a7ab1778f35a7335ab8522d81610e8d1f}{\index{Reversi@{Reversi}!liefere\-Aktuellen\-Spieler@{liefere\-Aktuellen\-Spieler}}
+\index{liefere\-Aktuellen\-Spieler@{liefere\-Aktuellen\-Spieler}!Reversi@{Reversi}}
+\subsubsection[{liefere\-Aktuellen\-Spieler}]{\setlength{\rightskip}{0pt plus 5cm}int Reversi\-::liefere\-Aktuellen\-Spieler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classReversi_a7ab1778f35a7335ab8522d81610e8d1f}
+Liefert den aktuellen \hyperlink{classSpieler}{Spieler} als I\-D.
+
+\begin{DoxyReturn}{Returns}
+Die I\-D des aktuellen Spielers. 
+\end{DoxyReturn}
+\hypertarget{classReversi_a3473c04b4663baa9b9731e9b9cd8c09f}{\index{Reversi@{Reversi}!liefere\-Alle\-Spieler@{liefere\-Alle\-Spieler}}
+\index{liefere\-Alle\-Spieler@{liefere\-Alle\-Spieler}!Reversi@{Reversi}}
+\subsubsection[{liefere\-Alle\-Spieler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Spieler} $\ast$$\ast$ Reversi\-::liefere\-Alle\-Spieler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classReversi_a3473c04b4663baa9b9731e9b9cd8c09f}
+Liefert alle \hyperlink{classSpieler}{Spieler} des Spiels.
+
+\begin{DoxyReturn}{Returns}
+Alle \hyperlink{classSpieler}{Spieler} des Spiels. 
+\end{DoxyReturn}
+\hypertarget{classReversi_a0e0285172b42340b0dc90837840f19c2}{\index{Reversi@{Reversi}!liefere\-Erlaubte\-Spielzuege@{liefere\-Erlaubte\-Spielzuege}}
+\index{liefere\-Erlaubte\-Spielzuege@{liefere\-Erlaubte\-Spielzuege}!Reversi@{Reversi}}
+\subsubsection[{liefere\-Erlaubte\-Spielzuege}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Spielzug} $>$ Reversi\-::liefere\-Erlaubte\-Spielzuege (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classReversi_a0e0285172b42340b0dc90837840f19c2}
+Liefert die erlaubten Spielzuege.
+
+\begin{DoxyReturn}{Returns}
+Die erlaubten Spielzuege. 
+\end{DoxyReturn}
+\hypertarget{classReversi_af2c9e7f784cdd40097fdb81debc69c0a}{\index{Reversi@{Reversi}!liefere\-Spielbrett@{liefere\-Spielbrett}}
+\index{liefere\-Spielbrett@{liefere\-Spielbrett}!Reversi@{Reversi}}
+\subsubsection[{liefere\-Spielbrett}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Spielbrett} $\ast$ Reversi\-::liefere\-Spielbrett (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classReversi_af2c9e7f784cdd40097fdb81debc69c0a}
+Liefert das Spielfeld-\/\-Objekt.
+
+\begin{DoxyReturn}{Returns}
+Das Spielfeld-\/\-Objekt. 
+\end{DoxyReturn}
+\hypertarget{classReversi_ac34759e93dc42daeadc694c7f438161f}{\index{Reversi@{Reversi}!liefere\-Spieler@{liefere\-Spieler}}
+\index{liefere\-Spieler@{liefere\-Spieler}!Reversi@{Reversi}}
+\subsubsection[{liefere\-Spieler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Spieler} $\ast$ Reversi\-::liefere\-Spieler (
+\begin{DoxyParamCaption}
+\item[{int}]{angabe\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{classReversi_ac34759e93dc42daeadc694c7f438161f}
+Liefert den einen \hyperlink{classSpieler}{Spieler}, mit Hilfe der Angabe seiner I\-D.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angabe\-I\-D} & Die Angabe der I\-D des Spielers. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classSpieler}{Spieler}, mit angegebener I\-D. 
+\end{DoxyReturn}
+\hypertarget{classReversi_a552ef8aea3cadce41ed8de8c610eb795}{\index{Reversi@{Reversi}!liefere\-Spielzuege@{liefere\-Spielzuege}}
+\index{liefere\-Spielzuege@{liefere\-Spielzuege}!Reversi@{Reversi}}
+\subsubsection[{liefere\-Spielzuege}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Spielzug} $>$ Reversi\-::liefere\-Spielzuege (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classReversi_a552ef8aea3cadce41ed8de8c610eb795}
+Liefert allegetaetigten Spielzuege.
+
+\begin{DoxyReturn}{Returns}
+Alle getaetigten Spielzuege. 
+\end{DoxyReturn}
+\hypertarget{classReversi_ad4baa37d88dbe7b4ddd8791943137537}{\index{Reversi@{Reversi}!local\-Move@{local\-Move}}
+\index{local\-Move@{local\-Move}!Reversi@{Reversi}}
+\subsubsection[{local\-Move}]{\setlength{\rightskip}{0pt plus 5cm}void Reversi\-::local\-Move (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [signal]}}}\label{classReversi_ad4baa37d88dbe7b4ddd8791943137537}
+Sendet ein Signal, wenn ein \hyperlink{classSpielzug}{Spielzug} akzeptiert wurde. \hypertarget{classReversi_a3e8988d0d227389d09673d4b5968a922}{\index{Reversi@{Reversi}!next\-Turn@{next\-Turn}}
+\index{next\-Turn@{next\-Turn}!Reversi@{Reversi}}
+\subsubsection[{next\-Turn}]{\setlength{\rightskip}{0pt plus 5cm}void Reversi\-::next\-Turn (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{classReversi_a3e8988d0d227389d09673d4b5968a922}
+Prueft das Spiel auf ein Ende. Wenn dieses nicht erreicht ist, wird der naechste Zug eingeleitet. \hypertarget{classReversi_a87d94f3c3325867453b5008b45829bd8}{\index{Reversi@{Reversi}!setze\-Spielstein@{setze\-Spielstein}}
+\index{setze\-Spielstein@{setze\-Spielstein}!Reversi@{Reversi}}
+\subsubsection[{setze\-Spielstein}]{\setlength{\rightskip}{0pt plus 5cm}void Reversi\-::setze\-Spielstein (
+\begin{DoxyParamCaption}
+\item[{int}]{angabe\-X, }
+\item[{int}]{angabe\-Y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{classReversi_a87d94f3c3325867453b5008b45829bd8}
+Setzt einen Spielstein auf das \hyperlink{classSpielbrett}{Spielbrett}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angabe\-X} & Die Angabe der X-\/\-Koordinate. \\
+\hline
+{\em angabe\-Y} & Die Angabe der Y-\/\-Koordinate. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classReversi_a619606ac8e7e930a5701d6f44730771c}{\index{Reversi@{Reversi}!spiel\-Ende@{spiel\-Ende}}
+\index{spiel\-Ende@{spiel\-Ende}!Reversi@{Reversi}}
+\subsubsection[{spiel\-Ende}]{\setlength{\rightskip}{0pt plus 5cm}void Reversi\-::spiel\-Ende (
+\begin{DoxyParamCaption}
+\item[{Q\-String}]{gewinner\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [signal]}}}\label{classReversi_a619606ac8e7e930a5701d6f44730771c}
+Sendet ein Signal wenn das Spiel zuende ist. \hypertarget{classReversi_a23b22c8f180004e0df26478219bd9b93}{\index{Reversi@{Reversi}!spiel\-Veraenderung@{spiel\-Veraenderung}}
+\index{spiel\-Veraenderung@{spiel\-Veraenderung}!Reversi@{Reversi}}
+\subsubsection[{spiel\-Veraenderung}]{\setlength{\rightskip}{0pt plus 5cm}void Reversi\-::spiel\-Veraenderung (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [signal]}}}\label{classReversi_a23b22c8f180004e0df26478219bd9b93}
+Sendet ein Signal, wenn sich an dem Spiel eine Veraendeung ergibt. \hypertarget{classReversi_a9606774d86257a0eee737fdd19d396dc}{\index{Reversi@{Reversi}!start@{start}}
+\index{start@{start}!Reversi@{Reversi}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}void Reversi\-::start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classReversi_a9606774d86257a0eee737fdd19d396dc}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{reversi_8h}{reversi.\-h}\item 
+\hyperlink{reversi_8cpp}{reversi.\-cpp}\end{DoxyCompactItemize}

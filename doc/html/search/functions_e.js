@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['setupui',['setupUi',['../classUi__Credits.html#a6bfca1eceb04ccf96dac510645927d75',1,'Ui_Credits::setupUi()'],['../classUi__gewinner.html#a3687bc57327c58675cbc709c9aac46a6',1,'Ui_gewinner::setupUi()'],['../classUi__Hauptmenue.html#a11efe98d9aa47edcaf88556426389984',1,'Ui_Hauptmenue::setupUi()'],['../classUi__MainWindow.html#acf4a0872c4c77d8f43a2ec66ed849b58',1,'Ui_MainWindow::setupUi()'],['../classUi__newGame.html#a459a03fafdb92eba1cd159894327f3a3',1,'Ui_newGame::setupUi()'],['../classUi__OpenGLGame.html#a0a1f93aa9935d6ccf076548c88c7148c',1,'Ui_OpenGLGame::setupUi()'],['../classUi__SpielLaden.html#adeb9bd7b62bce434b77b2b850eec4a0f',1,'Ui_SpielLaden::setupUi()']]],
+  ['setzeaktuellenspieler',['setzeAktuellenSpieler',['../classSpielzugListe.html#a8ce17aeece8a1f2c524345d619a355aa',1,'SpielzugListe']]],
+  ['setzeanimation',['setzeAnimation',['../classGLWidget.html#a5fd50bbf7a81c7fafc320caff423f39b',1,'GLWidget::setzeAnimation()'],['../classSpielbrett.html#ae561de28444766bf74705f7fc1d396f2',1,'Spielbrett::setzeAnimation()']]],
+  ['setzeanimationsettings',['setzeAnimationSettings',['../classGLWidget.html#a7a0390510b6476b067b73d973be17adf',1,'GLWidget']]],
+  ['setzeanzahlzurueck',['setzeAnzahlZurueck',['../classSpieler.html#affffa216287f59762c812be82d291945',1,'Spieler']]],
+  ['setzefarbe',['setzeFarbe',['../classSpielzug.html#a6fc38e0019c2cf6172a0fde10fd80f6d',1,'Spielzug']]],
+  ['setzefragespielzeugtrue',['setzeFrageSpielzeugTrue',['../classGLWidget.html#a433268187ea9021a519991ff69a79a09',1,'GLWidget']]],
+  ['setzefragespielzug',['setzeFrageSpielzug',['../classGLWidget.html#a202b2be8dd40de28fd78f0d66a1a9b7d',1,'GLWidget']]],
+  ['setzegueltigenspielzug',['setzeGueltigenSpielzug',['../classSpielbrett.html#ac8d008e1bd3471f99a5d25ceb1bf5caa',1,'Spielbrett']]],
+  ['setzespielstein',['setzeSpielstein',['../classReversi.html#a87d94f3c3325867453b5008b45829bd8',1,'Reversi::setzeSpielstein()'],['../classSpielbrett.html#a1a4f79a33ee43258499cae2040093f46',1,'Spielbrett::setzeSpielstein()']]],
+  ['setzex',['setzeX',['../classSpielzug.html#a7c9f2dfadd0cc1cc18f80047f9a9a52b',1,'Spielzug']]],
+  ['setzey',['setzeY',['../classSpielzug.html#acd296673dd7225784b6362dd6b87adc2',1,'Spielzug']]],
+  ['setzezugnummer',['setzeZugNummer',['../classSpielzug.html#ab0a39c9bdb4363adf8429d742206924d',1,'Spielzug']]],
+  ['speichereerlaubtezuege',['speichereErlaubteZuege',['../classSpielzugListe.html#a1f5aa551cab505be627ddbe2517fa7d5',1,'SpielzugListe']]],
+  ['spielbrett',['Spielbrett',['../classSpielbrett.html#ad1030668197b68a9db4626ae52fb5392',1,'Spielbrett']]],
+  ['spielende',['spielEnde',['../classGLWidget.html#a236d12dd5c8593339b1bbe7c1350586b',1,'GLWidget::spielEnde()'],['../classReversi.html#a619606ac8e7e930a5701d6f44730771c',1,'Reversi::spielEnde()']]],
+  ['spieler',['Spieler',['../classSpieler.html#aa7e36bd9766673980d37fc93514b709c',1,'Spieler']]],
+  ['spielfeldclicked',['spielfeldClicked',['../classGLWidget.html#ab39fa82a1c9ebaf72705013d16b82ead',1,'GLWidget']]],
+  ['spielfeldgroesse',['spielfeldGroesse',['../classGLWidget.html#ac19f12d5851509a8102251825c61e1c6',1,'GLWidget']]],
+  ['spielladen',['SpielLaden',['../classSpielLaden.html#a6cfe1bcc4deb5c479ca64a3ea17a58fb',1,'SpielLaden']]],
+  ['spielveraenderung',['spielVeraenderung',['../classReversi.html#a23b22c8f180004e0df26478219bd9b93',1,'Reversi']]],
+  ['spielzug',['Spielzug',['../classSpielzug.html#a7b7aad35bfc1043c525ccfc4c20e11ed',1,'Spielzug::Spielzug()'],['../classSpielzug.html#a89e6a868824fb8649a1a7d29df1243cd',1,'Spielzug::Spielzug(SpielerFarbe angabeFarbe, int angabeX, int angabeY)']]],
+  ['spielzugliste',['SpielzugListe',['../classSpielzugListe.html#a2c1a6281507b6915e42658dbcd6ee4b3',1,'SpielzugListe::SpielzugListe()'],['../classSpielzugListe.html#a1572de2f17f8ee3a82586701254c8cdb',1,'SpielzugListe::SpielzugListe(int angabeSpieler, vector&lt; Spielzug &gt; angabeErlaubterSpielzuege, vector&lt; Spielzug &gt; angabeGelegterSpielzuege)']]],
+  ['start',['start',['../classReversi.html#a9606774d86257a0eee737fdd19d396dc',1,'Reversi']]]
+];

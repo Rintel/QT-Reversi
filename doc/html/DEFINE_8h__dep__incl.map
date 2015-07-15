@@ -1,0 +1,18 @@
+<map id="DEFINE.h" name="DEFINE.h">
+<area shape="rect" id="node2" href="$feld_8h.html" title="feld.h" alt="" coords="170,80,224,107"/>
+<area shape="rect" id="node4" href="$spielbrett_8h.html" title="spielbrett.h" alt="" coords="53,155,139,181"/>
+<area shape="rect" id="node6" href="$glwidget_8cpp.html" title="glwidget.cpp" alt="" coords="90,379,184,405"/>
+<area shape="rect" id="node9" href="$reversi_8h.html" title="reversi.h" alt="" coords="379,229,451,256"/>
+<area shape="rect" id="node12" href="$spieler_8h.html" title="spieler.h" alt="" coords="255,155,325,181"/>
+<area shape="rect" id="node14" href="$spielzug_8h.html" title="spielzug.h" alt="" coords="459,80,540,107"/>
+<area shape="rect" id="node3" href="$feld_8cpp.html" title="feld.cpp" alt="" coords="163,155,231,181"/>
+<area shape="rect" id="node5" href="$glwidget_8h.html" title="glwidget.h" alt="" coords="229,304,309,331"/>
+<area shape="rect" id="node11" href="$spielbrett_8cpp.html" title="spielbrett.cpp" alt="" coords="94,229,193,256"/>
+<area shape="rect" id="node7" href="$ui__openglgame_8h.html" title="ui_openglgame.h" alt="" coords="209,379,329,405"/>
+<area shape="rect" id="node8" href="$openglgame_8cpp.html" title="openglgame.cpp" alt="" coords="259,453,375,480"/>
+<area shape="rect" id="node10" href="$reversi_8cpp.html" title="reversi.cpp" alt="" coords="371,304,457,331"/>
+<area shape="rect" id="node13" href="$spieler_8cpp.html" title="spieler.cpp" alt="" coords="269,229,355,256"/>
+<area shape="rect" id="node15" href="$spielzugliste_8h.html" title="spielzugliste.h" alt="" coords="571,155,676,181"/>
+<area shape="rect" id="node17" href="$spielzug_8cpp.html" title="spielzug.cpp" alt="" coords="453,155,547,181"/>
+<area shape="rect" id="node16" href="$spielzugliste_8cpp.html" title="spielzugliste.cpp" alt="" coords="558,229,676,256"/>
+</map>

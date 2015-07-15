@@ -1,0 +1,176 @@
+\hypertarget{classSpielzug}{\section{Spielzug Class Reference}
+\label{classSpielzug}\index{Spielzug@{Spielzug}}
+}
+
+
+{\ttfamily \#include $<$spielzug.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSpielzug_a7b7aad35bfc1043c525ccfc4c20e11ed}{Spielzug} ()
+\item 
+\hyperlink{classSpielzug_a89e6a868824fb8649a1a7d29df1243cd}{Spielzug} (\hyperlink{DEFINE_8h_af7777a498318335ea89b85bdc0d1651f}{Spieler\-Farbe} angabe\-Farbe, int angabe\-X, int angabe\-Y)
+\item 
+void \hyperlink{classSpielzug_ab0a39c9bdb4363adf8429d742206924d}{setze\-Zug\-Nummer} (int angabe\-Nummer)
+\item 
+void \hyperlink{classSpielzug_a7c9f2dfadd0cc1cc18f80047f9a9a52b}{setze\-X} (int angabe\-X)
+\item 
+void \hyperlink{classSpielzug_acd296673dd7225784b6362dd6b87adc2}{setze\-Y} (int angabe\-Y)
+\item 
+void \hyperlink{classSpielzug_a6fc38e0019c2cf6172a0fde10fd80f6d}{setze\-Farbe} (\hyperlink{DEFINE_8h_af7777a498318335ea89b85bdc0d1651f}{Spieler\-Farbe} angabe\-Farbe)
+\item 
+int \hyperlink{classSpielzug_a2864a33ceefc5059c2fe2b72d37caf26}{liefere\-Spielzugnummer} ()
+\item 
+\hyperlink{DEFINE_8h_af7777a498318335ea89b85bdc0d1651f}{Spieler\-Farbe} \hyperlink{classSpielzug_a4631d54708350591492b9c0a48e52dd4}{liefere\-Farbe} ()
+\item 
+int \hyperlink{classSpielzug_ad6fecfb5347477854c29a96b7aced58f}{liefere\-X\-Koordinate} ()
+\item 
+int \hyperlink{classSpielzug_a0952a01306c666d25ba4f5275875fe1a}{liefere\-Y\-Koordinate} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Diese Klasse repraesentiert einen Reversi-\/\-Spielzug. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSpielzug_a7b7aad35bfc1043c525ccfc4c20e11ed}{\index{Spielzug@{Spielzug}!Spielzug@{Spielzug}}
+\index{Spielzug@{Spielzug}!Spielzug@{Spielzug}}
+\subsubsection[{Spielzug}]{\setlength{\rightskip}{0pt plus 5cm}Spielzug\-::\-Spielzug (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpielzug_a7b7aad35bfc1043c525ccfc4c20e11ed}
+Default-\/\-Konstruktor fuer einen \hyperlink{classSpielzug}{Spielzug}. X und Y werden auf -\/1 gesetzt, die Farbe wird mit white initialisiert und die Spielzugnummer mit 0. \hypertarget{classSpielzug_a89e6a868824fb8649a1a7d29df1243cd}{\index{Spielzug@{Spielzug}!Spielzug@{Spielzug}}
+\index{Spielzug@{Spielzug}!Spielzug@{Spielzug}}
+\subsubsection[{Spielzug}]{\setlength{\rightskip}{0pt plus 5cm}Spielzug\-::\-Spielzug (
+\begin{DoxyParamCaption}
+\item[{{\bf Spieler\-Farbe}}]{angabe\-Farbe, }
+\item[{int}]{angabe\-X, }
+\item[{int}]{angabe\-Y}
+\end{DoxyParamCaption}
+)}}\label{classSpielzug_a89e6a868824fb8649a1a7d29df1243cd}
+Konstriert ein Objekt vom Typ \hyperlink{classSpielzug}{Spielzug} mit Hilfe der Angabe der Farbe, sowie des x und y Wertes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angabe\-Farbe} & Angabe der Farbe. \\
+\hline
+{\em angabe\-X} & Angabe des X-\/\-Wertes. \\
+\hline
+{\em angabe\-Y} & Angabe des Y-\/\-Wertes. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSpielzug_a4631d54708350591492b9c0a48e52dd4}{\index{Spielzug@{Spielzug}!liefere\-Farbe@{liefere\-Farbe}}
+\index{liefere\-Farbe@{liefere\-Farbe}!Spielzug@{Spielzug}}
+\subsubsection[{liefere\-Farbe}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Spieler\-Farbe} Spielzug\-::liefere\-Farbe (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpielzug_a4631d54708350591492b9c0a48e52dd4}
+Liefert die Farbe des Spielzugs.
+
+\begin{DoxyReturn}{Returns}
+Die Farbe des Spielzugs. 
+\end{DoxyReturn}
+\hypertarget{classSpielzug_a2864a33ceefc5059c2fe2b72d37caf26}{\index{Spielzug@{Spielzug}!liefere\-Spielzugnummer@{liefere\-Spielzugnummer}}
+\index{liefere\-Spielzugnummer@{liefere\-Spielzugnummer}!Spielzug@{Spielzug}}
+\subsubsection[{liefere\-Spielzugnummer}]{\setlength{\rightskip}{0pt plus 5cm}int Spielzug\-::liefere\-Spielzugnummer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpielzug_a2864a33ceefc5059c2fe2b72d37caf26}
+Liefert die Spielzugnummer.
+
+\begin{DoxyReturn}{Returns}
+Die Spielzugnummer. 
+\end{DoxyReturn}
+\hypertarget{classSpielzug_ad6fecfb5347477854c29a96b7aced58f}{\index{Spielzug@{Spielzug}!liefere\-X\-Koordinate@{liefere\-X\-Koordinate}}
+\index{liefere\-X\-Koordinate@{liefere\-X\-Koordinate}!Spielzug@{Spielzug}}
+\subsubsection[{liefere\-X\-Koordinate}]{\setlength{\rightskip}{0pt plus 5cm}int Spielzug\-::liefere\-X\-Koordinate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpielzug_ad6fecfb5347477854c29a96b7aced58f}
+Liefert die X-\/\-Koordinate des Spielzugs.
+
+\begin{DoxyReturn}{Returns}
+Die X-\/\-Koordinate des Spielzugs. 
+\end{DoxyReturn}
+\hypertarget{classSpielzug_a0952a01306c666d25ba4f5275875fe1a}{\index{Spielzug@{Spielzug}!liefere\-Y\-Koordinate@{liefere\-Y\-Koordinate}}
+\index{liefere\-Y\-Koordinate@{liefere\-Y\-Koordinate}!Spielzug@{Spielzug}}
+\subsubsection[{liefere\-Y\-Koordinate}]{\setlength{\rightskip}{0pt plus 5cm}int Spielzug\-::liefere\-Y\-Koordinate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpielzug_a0952a01306c666d25ba4f5275875fe1a}
+Liefert die Y-\/\-Koordinate des Spielzugs.
+
+\begin{DoxyReturn}{Returns}
+Die Y-\/\-Koordinate des Spielzugs. 
+\end{DoxyReturn}
+\hypertarget{classSpielzug_a6fc38e0019c2cf6172a0fde10fd80f6d}{\index{Spielzug@{Spielzug}!setze\-Farbe@{setze\-Farbe}}
+\index{setze\-Farbe@{setze\-Farbe}!Spielzug@{Spielzug}}
+\subsubsection[{setze\-Farbe}]{\setlength{\rightskip}{0pt plus 5cm}void Spielzug\-::setze\-Farbe (
+\begin{DoxyParamCaption}
+\item[{{\bf Spieler\-Farbe}}]{angabe\-Farbe}
+\end{DoxyParamCaption}
+)}}\label{classSpielzug_a6fc38e0019c2cf6172a0fde10fd80f6d}
+Setzt die Farbe des Spielzugs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angabe\-Farbe} & Angabe des Spielzugs. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSpielzug_a7c9f2dfadd0cc1cc18f80047f9a9a52b}{\index{Spielzug@{Spielzug}!setze\-X@{setze\-X}}
+\index{setze\-X@{setze\-X}!Spielzug@{Spielzug}}
+\subsubsection[{setze\-X}]{\setlength{\rightskip}{0pt plus 5cm}void Spielzug\-::setze\-X (
+\begin{DoxyParamCaption}
+\item[{int}]{angabe\-X}
+\end{DoxyParamCaption}
+)}}\label{classSpielzug_a7c9f2dfadd0cc1cc18f80047f9a9a52b}
+Setzt den X-\/\-Wert des Spielzugs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angabe\-X} & Angabe des X-\/\-Werts als Int-\/\-Wert. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSpielzug_acd296673dd7225784b6362dd6b87adc2}{\index{Spielzug@{Spielzug}!setze\-Y@{setze\-Y}}
+\index{setze\-Y@{setze\-Y}!Spielzug@{Spielzug}}
+\subsubsection[{setze\-Y}]{\setlength{\rightskip}{0pt plus 5cm}void Spielzug\-::setze\-Y (
+\begin{DoxyParamCaption}
+\item[{int}]{angabe\-Y}
+\end{DoxyParamCaption}
+)}}\label{classSpielzug_acd296673dd7225784b6362dd6b87adc2}
+Setzt den Y-\/\-Wert des Spielzugs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angabe\-Y} & Angabe des Y-\/\-Werts als Int-\/\-Wert. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSpielzug_ab0a39c9bdb4363adf8429d742206924d}{\index{Spielzug@{Spielzug}!setze\-Zug\-Nummer@{setze\-Zug\-Nummer}}
+\index{setze\-Zug\-Nummer@{setze\-Zug\-Nummer}!Spielzug@{Spielzug}}
+\subsubsection[{setze\-Zug\-Nummer}]{\setlength{\rightskip}{0pt plus 5cm}void Spielzug\-::setze\-Zug\-Nummer (
+\begin{DoxyParamCaption}
+\item[{int}]{angabe\-Nummer}
+\end{DoxyParamCaption}
+)}}\label{classSpielzug_ab0a39c9bdb4363adf8429d742206924d}
+Setzt die Spielzugnummer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angabe\-Nummer} & Angabe der Spielzugnummer als Int-\/\-Wert. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{spielzug_8h}{spielzug.\-h}\item 
+\hyperlink{spielzug_8cpp}{spielzug.\-cpp}\end{DoxyCompactItemize}

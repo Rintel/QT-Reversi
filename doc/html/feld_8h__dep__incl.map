@@ -1,0 +1,11 @@
+<map id="feld.h" name="feld.h">
+<area shape="rect" id="node2" href="$feld_8cpp.html" title="feld.cpp" alt="" coords="77,80,144,107"/>
+<area shape="rect" id="node3" href="$spielbrett_8h.html" title="spielbrett.h" alt="" coords="169,80,255,107"/>
+<area shape="rect" id="node4" href="$glwidget_8h.html" title="glwidget.h" alt="" coords="73,229,153,256"/>
+<area shape="rect" id="node8" href="$reversi_8h.html" title="reversi.h" alt="" coords="176,155,248,181"/>
+<area shape="rect" id="node10" href="$spielbrett_8cpp.html" title="spielbrett.cpp" alt="" coords="297,155,396,181"/>
+<area shape="rect" id="node5" href="$glwidget_8cpp.html" title="glwidget.cpp" alt="" coords="203,304,297,331"/>
+<area shape="rect" id="node6" href="$ui__openglgame_8h.html" title="ui_openglgame.h" alt="" coords="5,304,125,331"/>
+<area shape="rect" id="node7" href="$openglgame_8cpp.html" title="openglgame.cpp" alt="" coords="55,379,171,405"/>
+<area shape="rect" id="node9" href="$reversi_8cpp.html" title="reversi.cpp" alt="" coords="178,229,264,256"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Spielbrett::setzeSpielstein" name="Spielbrett::setzeSpielstein">
+<area shape="rect" id="node2" href="$classSpielbrett.html#aa16a4e86f849602fd6868cc6772c46c2" title="Spielbrett::liefereFeldeigenschaft" alt="" coords="505,5,717,32"/>
+<area shape="rect" id="node4" href="$classFeld.html#a17f0cf8213cc7c98f3e8d73c9ed8bca9" title="Feld::aendereFarbeUndEigenschaft" alt="" coords="229,27,456,53"/>
+<area shape="rect" id="node5" href="$classSpielbrett.html#a33d8b89cbb4266c522b950d58f180ad0" title="Spielbrett::entferneAlle\lErlaubtenZuege" alt="" coords="265,78,420,119"/>
+<area shape="rect" id="node3" href="$classFeld.html#a99a02b1d81eccc5ced54da45d37eedd1" title="Feld::liefereFeldeigenschaft" alt="" coords="766,5,949,32"/>
+<area shape="rect" id="node6" href="$classFeld.html#ae11f5df6990d6153f5c09f6e3f1d60d3" title="Feld::aendereEigenschaft" alt="" coords="525,85,696,112"/>
+</map>

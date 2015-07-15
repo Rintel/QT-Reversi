@@ -1,0 +1,303 @@
+\hypertarget{classSpielbrett}{\section{Spielbrett Class Reference}
+\label{classSpielbrett}\index{Spielbrett@{Spielbrett}}
+}
+
+
+{\ttfamily \#include $<$spielbrett.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSpielbrett_ad1030668197b68a9db4626ae52fb5392}{Spielbrett} ()
+\item 
+bool \hyperlink{classSpielbrett_a1a4f79a33ee43258499cae2040093f46}{setze\-Spielstein} (\hyperlink{DEFINE_8h_af7777a498318335ea89b85bdc0d1651f}{Spieler\-Farbe} angabe\-Farbe, int angabe\-X, int angabe\-Y)
+\item 
+bool \hyperlink{classSpielbrett_ac8d008e1bd3471f99a5d25ceb1bf5caa}{setze\-Gueltigen\-Spielzug} (int angabe\-X, int angabe\-Y)
+\item 
+bool \hyperlink{classSpielbrett_a4ea6649406b8bc45ab9772b9f0a9f0a8}{drehe\-Spielstein} (int angabe\-X, int angabe\-Y)
+\item 
+void \hyperlink{classSpielbrett_aad45932000bdb82cc1c58c4dbce08045}{entferne\-Alle\-Drehungen} ()
+\item 
+void \hyperlink{classSpielbrett_a33d8b89cbb4266c522b950d58f180ad0}{entferne\-Alle\-Erlaubten\-Zuege} ()
+\item 
+void \hyperlink{classSpielbrett_ae561de28444766bf74705f7fc1d396f2}{setze\-Animation} (bool angabe\-Animation)
+\item 
+bool \hyperlink{classSpielbrett_a973e4e3f43906428d50479001c08aae5}{liefere\-Animation} ()
+\item 
+\hyperlink{DEFINE_8h_a38d3a135c8443ff29d22fa0756476c5b}{Feld\-Eigenschaft} \hyperlink{classSpielbrett_aa16a4e86f849602fd6868cc6772c46c2}{liefere\-Feldeigenschaft} (int angabe\-X, int angabe\-Y)
+\item 
+\hyperlink{DEFINE_8h_af7777a498318335ea89b85bdc0d1651f}{Spieler\-Farbe} \hyperlink{classSpielbrett_a361157137c7c7cda4e06f568131c8fc9}{liefere\-Farbe} (int angabe\-X, int angabe\-Y)
+\item 
+bool \hyperlink{classSpielbrett_a9ff04ceff05cfd689057788f8df4774f}{liefere\-Drehung} (int angabe\-X, int angabe\-Y)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Diese Klasse repraesentiert ein quadratisches \hyperlink{classSpielbrett}{Spielbrett}, welches aus 8 $\ast$ 8 quadratischen Feldern besteht. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSpielbrett_ad1030668197b68a9db4626ae52fb5392}{\index{Spielbrett@{Spielbrett}!Spielbrett@{Spielbrett}}
+\index{Spielbrett@{Spielbrett}!Spielbrett@{Spielbrett}}
+\subsubsection[{Spielbrett}]{\setlength{\rightskip}{0pt plus 5cm}Spielbrett\-::\-Spielbrett (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpielbrett_ad1030668197b68a9db4626ae52fb5392}
+Konstruiert ein Objekt \hyperlink{classSpielbrett}{Spielbrett}, mit den Startoptionen von \hyperlink{classReversi}{Reversi}. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classSpielbrett_a4ea6649406b8bc45ab9772b9f0a9f0a8}{\index{Spielbrett@{Spielbrett}!drehe\-Spielstein@{drehe\-Spielstein}}
+\index{drehe\-Spielstein@{drehe\-Spielstein}!Spielbrett@{Spielbrett}}
+\subsubsection[{drehe\-Spielstein}]{\setlength{\rightskip}{0pt plus 5cm}bool Spielbrett\-::drehe\-Spielstein (
+\begin{DoxyParamCaption}
+\item[{int}]{angabe\-X, }
+\item[{int}]{angabe\-Y}
+\end{DoxyParamCaption}
+)}}\label{classSpielbrett_a4ea6649406b8bc45ab9772b9f0a9f0a8}
+Wechselt mit der Hilfe der Angabe von X-\/ und Y-\/\-Koordinate die Farbe eines Spielsteins.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angabe\-X} & Angabe der X-\/\-Koordinate. \\
+\hline
+{\em angabe\-Y} & Angabe der Y-\/\-Koordinate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True wenn erfolgreich $\vert$ False wenn nicht moeglich. 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSpielbrett_a4ea6649406b8bc45ab9772b9f0a9f0a8_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classSpielbrett_aad45932000bdb82cc1c58c4dbce08045}{\index{Spielbrett@{Spielbrett}!entferne\-Alle\-Drehungen@{entferne\-Alle\-Drehungen}}
+\index{entferne\-Alle\-Drehungen@{entferne\-Alle\-Drehungen}!Spielbrett@{Spielbrett}}
+\subsubsection[{entferne\-Alle\-Drehungen}]{\setlength{\rightskip}{0pt plus 5cm}void Spielbrett\-::entferne\-Alle\-Drehungen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpielbrett_aad45932000bdb82cc1c58c4dbce08045}
+Entfernt alle festgelegten Drehungen aller Spielfelder des Spielbretts. 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classSpielbrett_aad45932000bdb82cc1c58c4dbce08045_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classSpielbrett_a33d8b89cbb4266c522b950d58f180ad0}{\index{Spielbrett@{Spielbrett}!entferne\-Alle\-Erlaubten\-Zuege@{entferne\-Alle\-Erlaubten\-Zuege}}
+\index{entferne\-Alle\-Erlaubten\-Zuege@{entferne\-Alle\-Erlaubten\-Zuege}!Spielbrett@{Spielbrett}}
+\subsubsection[{entferne\-Alle\-Erlaubten\-Zuege}]{\setlength{\rightskip}{0pt plus 5cm}void Spielbrett\-::entferne\-Alle\-Erlaubten\-Zuege (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpielbrett_a33d8b89cbb4266c522b950d58f180ad0}
+Entfernt alle erlaubten Spielzuege von den einzelnen Spielfeldern und ersetzt diese durch \char`\"{}leer\char`\"{}. 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSpielbrett_a33d8b89cbb4266c522b950d58f180ad0_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classSpielbrett_a973e4e3f43906428d50479001c08aae5}{\index{Spielbrett@{Spielbrett}!liefere\-Animation@{liefere\-Animation}}
+\index{liefere\-Animation@{liefere\-Animation}!Spielbrett@{Spielbrett}}
+\subsubsection[{liefere\-Animation}]{\setlength{\rightskip}{0pt plus 5cm}bool Spielbrett\-::liefere\-Animation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpielbrett_a973e4e3f43906428d50479001c08aae5}
+Liefert die Animation(boolscher Wert) des Spielbretts.
+
+\begin{DoxyReturn}{Returns}
+Die Animation des Spielbretts als bool. 
+\end{DoxyReturn}
+\hypertarget{classSpielbrett_a9ff04ceff05cfd689057788f8df4774f}{\index{Spielbrett@{Spielbrett}!liefere\-Drehung@{liefere\-Drehung}}
+\index{liefere\-Drehung@{liefere\-Drehung}!Spielbrett@{Spielbrett}}
+\subsubsection[{liefere\-Drehung}]{\setlength{\rightskip}{0pt plus 5cm}bool Spielbrett\-::liefere\-Drehung (
+\begin{DoxyParamCaption}
+\item[{int}]{angabe\-X, }
+\item[{int}]{angabe\-Y}
+\end{DoxyParamCaption}
+)}}\label{classSpielbrett_a9ff04ceff05cfd689057788f8df4774f}
+Liefert die Drehung(ob der Stein an dieser Position gedreht wird) eines Feldes auf dem \hyperlink{classSpielbrett}{Spielbrett}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angabe\-X} & Die Angabe der X-\/\-Koordinate. \\
+\hline
+{\em angabe\-Y} & Die Angabe der Y-\/\-Koordinate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Die Drehung des Feldes mit der Position von X und Y. 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{classSpielbrett_a9ff04ceff05cfd689057788f8df4774f_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classSpielbrett_a361157137c7c7cda4e06f568131c8fc9}{\index{Spielbrett@{Spielbrett}!liefere\-Farbe@{liefere\-Farbe}}
+\index{liefere\-Farbe@{liefere\-Farbe}!Spielbrett@{Spielbrett}}
+\subsubsection[{liefere\-Farbe}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Spieler\-Farbe} Spielbrett\-::liefere\-Farbe (
+\begin{DoxyParamCaption}
+\item[{int}]{angabe\-X, }
+\item[{int}]{angabe\-Y}
+\end{DoxyParamCaption}
+)}}\label{classSpielbrett_a361157137c7c7cda4e06f568131c8fc9}
+Liefert die Farbe eines Feldes auf dem \hyperlink{classSpielbrett}{Spielbrett}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angabe\-X} & Die Angabe der X-\/\-Koordinate. \\
+\hline
+{\em angabe\-Y} & Die Angabe der Y-\/\-Koordinate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Die Farbe des Feldes mit der Position von X und Y. 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{classSpielbrett_a361157137c7c7cda4e06f568131c8fc9_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classSpielbrett_aa16a4e86f849602fd6868cc6772c46c2}{\index{Spielbrett@{Spielbrett}!liefere\-Feldeigenschaft@{liefere\-Feldeigenschaft}}
+\index{liefere\-Feldeigenschaft@{liefere\-Feldeigenschaft}!Spielbrett@{Spielbrett}}
+\subsubsection[{liefere\-Feldeigenschaft}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Feld\-Eigenschaft} Spielbrett\-::liefere\-Feldeigenschaft (
+\begin{DoxyParamCaption}
+\item[{int}]{angabe\-X, }
+\item[{int}]{angabe\-Y}
+\end{DoxyParamCaption}
+)}}\label{classSpielbrett_aa16a4e86f849602fd6868cc6772c46c2}
+Liefert die Eigenschaft eines Feldes auf dem \hyperlink{classSpielbrett}{Spielbrett}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angabe\-X} & Die Angabe der X-\/\-Koordinate. \\
+\hline
+{\em angabe\-Y} & Die Angabe der Y-\/\-Koordinate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Die Feldeigenschaft des Feldes mit der Position von X und Y. 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSpielbrett_aa16a4e86f849602fd6868cc6772c46c2_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classSpielbrett_ae561de28444766bf74705f7fc1d396f2}{\index{Spielbrett@{Spielbrett}!setze\-Animation@{setze\-Animation}}
+\index{setze\-Animation@{setze\-Animation}!Spielbrett@{Spielbrett}}
+\subsubsection[{setze\-Animation}]{\setlength{\rightskip}{0pt plus 5cm}void Spielbrett\-::setze\-Animation (
+\begin{DoxyParamCaption}
+\item[{bool}]{angabe\-Animation}
+\end{DoxyParamCaption}
+)}}\label{classSpielbrett_ae561de28444766bf74705f7fc1d396f2}
+Setzt die Animation des Spielbretts.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angabe\-Animation} & Angabe der Animation als boolschen Wert. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSpielbrett_ac8d008e1bd3471f99a5d25ceb1bf5caa}{\index{Spielbrett@{Spielbrett}!setze\-Gueltigen\-Spielzug@{setze\-Gueltigen\-Spielzug}}
+\index{setze\-Gueltigen\-Spielzug@{setze\-Gueltigen\-Spielzug}!Spielbrett@{Spielbrett}}
+\subsubsection[{setze\-Gueltigen\-Spielzug}]{\setlength{\rightskip}{0pt plus 5cm}bool Spielbrett\-::setze\-Gueltigen\-Spielzug (
+\begin{DoxyParamCaption}
+\item[{int}]{angabe\-X, }
+\item[{int}]{angabe\-Y}
+\end{DoxyParamCaption}
+)}}\label{classSpielbrett_ac8d008e1bd3471f99a5d25ceb1bf5caa}
+Setzt mit der Hilfe der Angabe von X-\/ und Y-\/\-Koordinate einen gueltigen \hyperlink{classSpielzug}{Spielzug} fest.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angabe\-X} & Angabe der X-\/\-Koordinate. \\
+\hline
+{\em angabe\-Y} & Angabe der Y-\/\-Koordinate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True wenn erfolgreich festgelegt $\vert$ False wenn nicht moeglich. 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSpielbrett_ac8d008e1bd3471f99a5d25ceb1bf5caa_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classSpielbrett_a1a4f79a33ee43258499cae2040093f46}{\index{Spielbrett@{Spielbrett}!setze\-Spielstein@{setze\-Spielstein}}
+\index{setze\-Spielstein@{setze\-Spielstein}!Spielbrett@{Spielbrett}}
+\subsubsection[{setze\-Spielstein}]{\setlength{\rightskip}{0pt plus 5cm}bool Spielbrett\-::setze\-Spielstein (
+\begin{DoxyParamCaption}
+\item[{{\bf Spieler\-Farbe}}]{angabe\-Farbe, }
+\item[{int}]{angabe\-X, }
+\item[{int}]{angabe\-Y}
+\end{DoxyParamCaption}
+)}}\label{classSpielbrett_a1a4f79a33ee43258499cae2040093f46}
+Setzt einen Spielstein an eine Position des Spielbretts. 
+\begin{DoxyParams}{Parameters}
+{\em angabe\-Farbe} & Angabe der Farbe des Spielsteins. \\
+\hline
+{\em angabe\-X} & Angabe der X-\/\-Koordinate. \\
+\hline
+{\em angabe\-Y} & Angabe der Y-\/\-Koordinate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True wenn setzten erfolgreich $\vert$ False wenn nicht erlaubt. 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSpielbrett_a1a4f79a33ee43258499cae2040093f46_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{spielbrett_8h}{spielbrett.\-h}\item 
+\hyperlink{spielbrett_8cpp}{spielbrett.\-cpp}\end{DoxyCompactItemize}

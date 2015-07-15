@@ -1,0 +1,10 @@
+<map id="ui_openglgame.h" name="ui_openglgame.h">
+<area shape="rect" id="node9" href="$glwidget_8h.html" title="glwidget.h" alt="" coords="845,80,925,107"/>
+<area shape="rect" id="node14" href="$spielbrett_8h.html" title="spielbrett.h" alt="" coords="786,229,872,256"/>
+<area shape="rect" id="node18" href="$spieler_8h.html" title="spieler.h" alt="" coords="1326,229,1396,256"/>
+<area shape="rect" id="node20" href="$spielzug_8h.html" title="spielzug.h" alt="" coords="933,304,1013,331"/>
+<area shape="rect" id="node22" href="$reversi_8h.html" title="reversi.h" alt="" coords="973,155,1045,181"/>
+<area shape="rect" id="node15" href="$DEFINE_8h.html" title="DEFINE.h" alt="" coords="932,379,1013,405"/>
+<area shape="rect" id="node16" href="$feld_8h.html" title="feld.h" alt="" coords="802,304,856,331"/>
+<area shape="rect" id="node25" href="$spielzugliste_8h.html" title="spielzugliste.h" alt="" coords="1094,229,1199,256"/>
+</map>

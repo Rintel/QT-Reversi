@@ -1,0 +1,10 @@
+<map id="GLWidget::paintGL" name="GLWidget::paintGL">
+<area shape="rect" id="node2" href="$classGLWidget.html#a6ce32f69bd43407acad1fcf6e24bad09" title="GLWidget::zeichneSpielstein\lLayout" alt="" coords="187,74,378,115"/>
+<area shape="rect" id="node3" href="$classSpielbrett.html#aa16a4e86f849602fd6868cc6772c46c2" title="Spielbrett::liefereFeldeigenschaft" alt="" coords="427,5,639,32"/>
+<area shape="rect" id="node5" href="$classSpielbrett.html#a361157137c7c7cda4e06f568131c8fc9" title="Spielbrett::liefereFarbe" alt="" coords="457,56,610,83"/>
+<area shape="rect" id="node7" href="$classSpielbrett.html#a9ff04ceff05cfd689057788f8df4774f" title="Spielbrett::liefereDrehung" alt="" coords="449,107,618,133"/>
+<area shape="rect" id="node9" href="$classGLWidget.html#abe84c820e63e0471060ae8a52d22d48d" title="GLWidget::zeichneSpielstein" alt="" coords="438,157,629,184"/>
+<area shape="rect" id="node4" href="$classFeld.html#a99a02b1d81eccc5ced54da45d37eedd1" title="Feld::liefereFeldeigenschaft" alt="" coords="689,5,871,32"/>
+<area shape="rect" id="node6" href="$classFeld.html#a71857da4dc18318fc85c3332179db0a0" title="Feld::liefereFarbe" alt="" coords="719,56,841,83"/>
+<area shape="rect" id="node8" href="$classFeld.html#add4df21f3360a4405076f9e78f64c34e" title="Feld::liefereDrehung" alt="" coords="711,107,849,133"/>
+</map>
