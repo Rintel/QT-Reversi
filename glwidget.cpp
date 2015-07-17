@@ -1,6 +1,6 @@
 #include "glwidget.h"
-#include <GL/glut.h>
-#include <GL/glext.h>
+//#include <GL/glut.h>
+//#include <GL/glext.h>
 #include <QTimer>
 //#include <glm/glm.hpp>
 #include <vector>
