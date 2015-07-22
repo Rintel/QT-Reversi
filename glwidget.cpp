@@ -401,21 +401,35 @@ void GLWidget::spielEnde(QString gewinnerName)
  * @param spieler2Name Die Angabe des Namens von Spieler 2.
  * @param spieler1Black Die Angabe welcher Spieler der schwarze ist. (und damit beginnt)
  */
-void GLWidget::legeSpielerfest(QString spieler1Name, QString spieler2Name, bool spieler1Black)
+void GLWidget::legeSpielerfest(QString spieler1Name, QString spieler2Name, bool spieler1Black, bool spieler2KI)
 {
     QString spieler1;
     QString spieler2;
-    if(spieler1Black == true)
+    bool Xspieler1KI = false;
+    bool Xspieler2KI = false;
+    if(spieler1Black == true && spieler2KI == true)
+    {
+        spieler1 = spieler1Name;
+        spieler2 = spieler2Name;
+        Xspieler2KI = true;
+    }
+    else if(spieler1Black == true && spieler2KI == false)
     {
         spieler1 = spieler1Name;
         spieler2 = spieler2Name;
     }
-    else
+    else if(spieler1Black == false && spieler2KI == true)
+    {
+        spieler1 = spieler2Name;
+        spieler2 = spieler1Name;
+        Xspieler1KI = true;
+    }
+    else if(spieler1Black == false && spieler2KI == false)
     {
         spieler1 = spieler2Name;
         spieler2 = spieler1Name;
     }
-    spiel->aendereSpielerNamen(spieler1, spieler2);
+    spiel->aendereSpielerNamen(spieler1, spieler2, Xspieler1KI, Xspieler2KI);
 }
 
 

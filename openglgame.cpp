@@ -13,13 +13,13 @@
  * @param spielername2 Die Angabe des Spielernamens.
  * @param spieler1black Die Angabe welcher Spieler die schwarzen Spielsteine besitzt.
  */
-OpenGLGame::OpenGLGame(QWidget *parent, QStackedWidget *theSites, QString spielername1, QString spielername2, bool spieler1black, bool isBlue) :
+OpenGLGame::OpenGLGame(QWidget *parent, QStackedWidget *theSites, QString spielername1, QString spielername2, bool spieler1black, bool isBlue, bool KI) :
     QWidget(parent),
     ui(new Ui::OpenGLGame)
 {
     ui->setupUi(this);
     sites = theSites;
-    ui->widget->legeSpielerfest(spielername1, spielername2, spieler1black);
+    ui->widget->legeSpielerfest(spielername1, spielername2, spieler1black, KI);  //--> hier aus dem spielmenue
     ui->widget->setzeBoard(isBlue);
 }
 

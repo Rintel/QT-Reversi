@@ -36,9 +36,13 @@ private:
     int spielzugNr;
     /**Liste der berets getaetigten Spielzuege.*/
     vector<SpielzugListe> alleSpielzuege;
+    /**Gibt an, ob Spieler 1 durch KI gespielt wird.*/
+    bool spieler1KI;
+    /**Gibt an, ob Spieler 2 durch KI gespielt wird.*/
+    bool spieler2KI;
 
 public:
-    Reversi(QString spielerName1 = "Spieler 1", QString spielerName2 = "Spieler 2");
+    Reversi(QString spielerName1 = "Spieler 1", QString spielerName2 = "Spieler 2", bool angabeSpieler2KI = false, bool angabeSpieler1KI = false);
     ~Reversi();
 
     void start();
@@ -48,7 +52,7 @@ public:
     vector<Spielzug> liefereSpielzuege();
     vector<Spielzug> liefereErlaubteSpielzuege();
     int liefereAktuellenSpieler();
-    void aendereSpielerNamen(QString spieler1Name, QString spieler2Name);
+    void aendereSpielerNamen(QString spieler1Name, QString spieler2Name, bool spieler1KIx, bool spieler2KIx);
 
 private:
     void setzeEnde(bool spielEnde);
@@ -68,6 +72,7 @@ private:
     void updateSpalte(Spielzug angabeSpielzug);
     void updateDiagonal(Spielzug angabeSpielzug);
     void spielbrettVeraenderung();
+    bool macheKIZug();
 
 signals:
     /**Sendet ein Signal, wenn sich an dem Spiel eine Veraendeung ergibt.*/

@@ -2,6 +2,10 @@
 #include <stdio.h>
 #include <iostream>
 #include <QSound>
+#include <ctime>
+#include <stdlib.h>
+#include <time.h>
+#include <unistd.h>
 
 using namespace std;
 
@@ -13,7 +17,7 @@ using namespace std;
  * @param spielerName1
  * @param spielerName2
  */
-Reversi::Reversi(QString spielerName1, QString spielerName2)
+Reversi::Reversi(QString spielerName1, QString spielerName2, bool angabeSpieler2KI, bool angabeSpieler1KI)
 {
     spielzugNr = 1;
     spielfeld = new Spielbrett();
@@ -24,6 +28,8 @@ Reversi::Reversi(QString spielerName1, QString spielerName2)
     aktuellerSpieler = 0;
     ende = false;
     alleSpielzuege.clear();
+    spieler1KI = false;
+    spieler2KI = false;
 
     erlaubteSpielzuege.push_back(Spielzug(black, 2, 3));
     erlaubteSpielzuege.push_back(Spielzug(black, 3, 2));
@@ -160,6 +166,16 @@ bool Reversi::macheSpielzug(Spielzug angabeSpielzug)
             spielzugNr++;
         }
         spielbrettVeraenderung();
+        if(aktuellerSpieler == 0 && spieler1KI == true)
+        {
+            sleep(0.75);
+            macheKIZug();
+        }
+        if(aktuellerSpieler == 1 && spieler2KI == true)
+        {
+            sleep(0.75);
+            macheKIZug();
+        }
     }
     else
     {
@@ -609,10 +625,68 @@ void Reversi::nextTurn()
  * @param spieler1Name Die Angabe des Spielernamens.
  * @param spieler2Name Die Angabe des Spielernamens.
  */
-void Reversi::aendereSpielerNamen(QString spieler1Name, QString spieler2Name)
+void Reversi::aendereSpielerNamen(QString spieler1Name, QString spieler2Name, bool spieler1KIx, bool spieler2KIx)
 {
     dieSpieler[0]->aendereName(spieler1Name);
     dieSpieler[1]->aendereName(spieler2Name);
+    if(spieler1KIx == true)
+    {
+        spieler1KI = true;
+        macheKIZug();
+    }
+    if(spieler2KIx == true)
+        spieler2KI = true;
+}
+
+/**
+ * Fuehrt einen zufaelligen Spielzug aus.
+ * @return True wenn Spielzug erfolgt, false wenn nicht.
+ */
+bool Reversi::macheKIZug()
+{
+    Spielzug x;
+    for(int i = 0; i < erlaubteSpielzuege.size(); i++)
+    {
+        if(erlaubteSpielzuege[i].liefereFarbe() == dieSpieler[aktuellerSpieler]->liefereSpielerFarbe())
+            x = erlaubteSpielzuege[i];
+    }
+    bool ok = false;
+    ok = spielfeld->setzeSpielstein(dieSpieler[aktuellerSpieler]->liefereSpielerFarbe(), x.liefereXKoordinate(), x.liefereYKoordinate());
+    if(ok)
+    {
+        fuegeSpielzugHinzu(x);
+        updateGame(x);
+        aendereAktuellenSpieler();
+        setzeErlaubteSpielzuege();
+        if(dieSpieler[aktuellerSpieler]->liefereAnzahlErlaubt() == 0)
+        {
+            aendereAktuellenSpieler();
+            if(dieSpieler[aktuellerSpieler]->liefereAnzahlErlaubt() == 0)
+                ende = true;
+            else
+            {
+                spielfeld->entferneAlleErlaubtenZuege();
+                setzeNeueSpielzuege();
+                spielzugNr++;
+                spielbrettVeraenderung();
+                macheKIZug();
+            }
+        }
+        if(!ende)
+        {
+            spielfeld->entferneAlleErlaubtenZuege();
+            setzeNeueSpielzuege();
+            spielzugNr++;
+        }
+        spielbrettVeraenderung();
+    }
+    else
+    {
+        QSound *sound = new QSound("no.wav");
+        sound->play();
+        localMove();
+    }
+    return ok;
 }
 
 

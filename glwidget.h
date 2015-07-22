@@ -61,7 +61,7 @@ public:
     void setzeAnimation(bool angabeBool);
     void setzeAnimationSettings(bool angabeBool);
     void verbindeSpiel(Reversi *spiel);
-    void legeSpielerfest(QString spieler1Name, QString spieler2Name, bool spieler1Black);
+    void legeSpielerfest(QString spieler1Name, QString spieler2Name, bool spieler1Black, bool spieler2KI);
     void setzeBoard(bool angabeObBlau);
 
 private:

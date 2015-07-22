@@ -17,7 +17,7 @@ private:
     QStackedWidget* sites;
 
 public:
-    explicit OpenGLGame(QWidget *parent = 0, QStackedWidget* theSites = 0, QString spielername1 = "Spieler 1", QString spielername2 = "Spieler 2", bool spieler1black = true, bool isBlue = true);
+    explicit OpenGLGame(QWidget *parent = 0, QStackedWidget* theSites = 0, QString spielername1 = "Spieler 1", QString spielername2 = "Spieler 2", bool spieler1black = true, bool isBlue = true, bool KI = true);
     ~OpenGLGame();
 
 private:

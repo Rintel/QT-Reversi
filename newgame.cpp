@@ -41,9 +41,10 @@ void newGame::on_startButton_clicked()
 {
     QString spieler1 = ui->nameSp1->toPlainText();
     QString spieler2 = ui->nameSp2->toPlainText();
-    bool spieler1black = ui->backButton->isChecked();
+    bool spieler1black = ui->blackButton->isChecked();
     bool isBlue = ui->blau->isChecked();
-    sites->addWidget(new OpenGLGame(this, liefereStackedWidget(), spieler1, spieler2, spieler1black, isBlue)); //Index 6 für das spiel in diesem moment?
+    bool ki = ui->KIBtn->isChecked();
+    sites->addWidget(new OpenGLGame(this, liefereStackedWidget(), spieler1, spieler2, spieler1black, isBlue, ki)); //Index 6 für das spiel in diesem moment?
     sites->setCurrentIndex(6);
 }
 
